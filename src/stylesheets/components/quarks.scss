@@ -8,6 +8,20 @@
   letter-spacing: -0.018vw;
 }
 
+.Q_BtnArrow {
+  color: var(--white, #fff);
+  font-family: 'Inter', sans-serif;
+  font-size: 3.125vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -0.059vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
 .Q_AvatarPic {
   padding-left: 0.508vw;
 

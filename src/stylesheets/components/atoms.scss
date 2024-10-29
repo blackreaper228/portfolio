@@ -14,15 +14,12 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.1s;
+
+  padding-top: 0.547vw;
 }
 
 .W_Footer > .A_Btn {
   padding-left: 0;
-}
-
-.A_Btn:hover {
-  transition: 0.1s;
-  color: var(--grey);
 }
 
 .A_GoDown {
@@ -35,6 +32,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 32px */
+  width: fit-content;
 }
 
 .A_NavText {
@@ -104,6 +102,7 @@
   line-height: 100%; /* 24px */
   letter-spacing: -0.018vw;
   text-decoration-line: underline;
+  padding-top: 0.195vw;
 }
 
 .A_Tag {

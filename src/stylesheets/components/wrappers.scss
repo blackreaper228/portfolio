@@ -46,7 +46,8 @@
 }
 
 .W_ConnectorV65 {
-  display: flex;
+  width: auto;
+  display: inline-flex;
   flex-direction: column;
   gap: 2.148vw;
 }
@@ -90,6 +91,23 @@
   flex-direction: column;
   gap: 7.813vw;
   padding-left: 0.391vw;
+}
+
+.W_BtnArrow {
+  display: flex;
+  gap: 0.938vw;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.W_BtnArrow:hover > .A_Btn {
+  transition: 0.1s;
+  color: var(--grey);
+}
+
+.W_BtnArrow:hover > .Q_BtnArrow {
+  transition: 0.1s;
+  color: var(--grey);
 }
 
 .W_Footer {
