@@ -1,7 +1,7 @@
 .W_ConnectorV144 {
   display: flex;
   flex-direction: column;
-  gap: 118px;
+  gap: 4.609vw;
 }
 
 .W_CaseHeaderLead {
@@ -12,87 +12,88 @@
 .W_CaseHeaderDescriptionText {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: 1.797vw;
 }
 
 .W_CaseHeaderDescription {
   display: flex;
   flex-direction: column;
-  gap: 152px;
+  gap: 5.938vw;
 }
 
 .W_ConnectorV72 {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 2.813vw;
 }
 
 .W_ConnectorV304 {
   position: sticky;
-  top: 48px;
+  top: 1.875vw;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 90vh;
-  min-height: 1086px;
-  padding-top: 20px;
+  min-height: 42.422vw;
+  padding-top: 0.781vw;
 }
 
 .W_ConnectorV392 {
   display: flex;
   flex-direction: column;
-  gap: 387px;
+  gap: 15.117vw;
 }
 
 .W_ConnectorV65 {
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 2.148vw;
 }
 
 .W_ConnectorV465 {
   display: flex;
   flex-direction: column;
-  gap: 465px;
+  gap: 18.164vw;
 }
 
 .W_ConnectorV168 {
   display: flex;
-  padding-left: 1px;
+  padding-left: 0.039vw;
   flex-direction: column;
-  gap: 168px;
+  gap: 6.563vw;
 }
 
 .W_ConnectorH106 {
   display: flex;
-  gap: 106px;
+  gap: 4.141vw;
 }
 
 .W_Tags {
   display: flex;
-  gap: 16px;
+  gap: 0.625vw;
 }
 
 .W_ConnectorH40 {
   display: flex;
-  gap: 40px;
+  gap: 1.563vw;
 }
 
 .W_ConnectorV40 {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 1.563vw;
 }
 
 .W_ConnectorV200 {
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 7.813vw;
+  padding-left: 0.391vw;
 }
 
 .W_Footer {
   display: flex;
-  padding-left: 8px;
+  padding-left: 0.195vw;
   justify-content: space-between;
 }

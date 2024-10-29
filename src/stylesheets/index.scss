@@ -4,7 +4,7 @@ body.index {
   background-color: #090909;
 
   padding: 1.875vw 2.891vw 2.656vw 2.813vw;
-  gap: 192px;
+  gap: 6.992vw;
 
   & > div,
   & > a {
@@ -12,29 +12,46 @@ body.index {
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  transition: opacity 0.3s ease;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.36);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  opacity: 0;
+}
+
 hr {
-  height: 0.078vw;
+  height: 2px;
   width: 100%;
 }
 
 h1 {
   color: var(--white, #fff);
   font-family: 'Inter';
-  font-size: 156px;
+  font-size: 6.094vw;
   font-style: normal;
   font-weight: 500;
   line-height: 104%; /* 162.24px */
-  letter-spacing: -2.964px;
+  letter-spacing: -0.116vw;
 }
 
 h2 {
   color: var(--white, #fff);
   font-family: 'Inter';
-  font-size: 116px;
+  font-size: 4.531vw;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 116px */
-  letter-spacing: -2.204px;
+  letter-spacing: -0.086vw;
 }
 
 h3 {
@@ -42,18 +59,18 @@ h3 {
   leading-trim: both;
   text-edge: cap;
   font-family: 'Inter';
-  font-size: 80px;
+  font-size: 3.125vw;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 80px */
-  letter-spacing: -1.52px;
+  letter-spacing: -0.059vw;
   text-transform: uppercase;
 }
 
 p {
   color: var(--white, #fff);
   font-family: 'Inter';
-  font-size: 30px;
+  font-size: 1.172vw;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 45px */
