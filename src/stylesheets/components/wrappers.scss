@@ -97,3 +97,26 @@
   padding-left: 0.195vw;
   justify-content: space-between;
 }
+@media only screen and (max-device-width: 462px) {
+  .W_ConnectorV304 {
+    display: none;
+  }
+
+  .W_ConnectorV144 {
+    gap: 68px;
+  }
+
+  .W_ConnectorH106 {
+    flex-direction: column;
+    gap: 52px;
+  }
+
+  .W_ConnectorH40 {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .W_ConnectorV65 {
+    gap: 16px;
+  }
+}

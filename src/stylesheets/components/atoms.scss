@@ -128,3 +128,16 @@
   background-color: var(--white);
   color: var(--black);
 }
+
+@media only screen and (max-device-width: 462px) {
+  .A_Btn {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.608px;
+  }
+
+  .A_GoDown {
+    padding-left: 0;
+    font-size: 18px;
+  }
+}

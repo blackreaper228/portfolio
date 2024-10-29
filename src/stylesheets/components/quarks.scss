@@ -17,6 +17,19 @@
   height: 15.234vw;
 }
 
+.avatarContainer {
+  position: relative;
+  display: inline-block; /* Для правильного отображения */
+}
+
+.gifka {
+  display: block; /* Убедись, что изображение отображается корректно */
+}
+
+.gifka:hover {
+  content: url('./images/img-0.gif'); /* Путь к гифке */
+}
+
 .Q_Cover {
   width: 42.266vw;
   height: 23.75vw;
@@ -45,4 +58,42 @@
 .Q_Smile {
   width: 1.406vw;
   height: 2.813vw;
+}
+@media only screen and (max-device-width: 462px) {
+  .Q_AvatarPic {
+    width: 194px;
+    height: 194px;
+
+    padding-left: 0px;
+  }
+
+  .Q_Cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Q_SmallPic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Q_MedPic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Q_BigPic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .Q_GiantPic {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 }
