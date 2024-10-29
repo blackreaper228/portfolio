@@ -1,0 +1,96 @@
+.A_Btn {
+  padding-left: 7px;
+
+  color: var(--white, #fff);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Inter';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 80px */
+  letter-spacing: -1.52px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.A_Btn:hover {
+  color: var(--grey);
+}
+
+.A_GoDown {
+  padding-left: 11px;
+
+  color: var(--white, #fff);
+
+  font-family: 'Inter';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
+}
+
+.A_NavText {
+  color: var(--white, #fff);
+  font-family: 'Inter';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
+  cursor: pointer;
+}
+
+.A_NavText:hover {
+  color: var(--grey, #fff);
+}
+
+.A_CaseHeaderLeadNote {
+  color: var(--white, #fff);
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.456px;
+}
+
+.A_CaseHeaderLeadLinkNote {
+  padding-top: 2px;
+
+  color: var(--white, #fff);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.456px;
+  text-decoration-line: underline;
+}
+
+.A_Tag {
+  height: 42px;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 7px;
+  border: 1px solid var(--white, #fff);
+
+  color: var(--white);
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.38px;
+}
+
+.A_Tag:first-child {
+  background-color: var(--white);
+  color: var(--black);
+}

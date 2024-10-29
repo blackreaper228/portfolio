@@ -1,0 +1,17 @@
+.M_CaseHeaderLeadLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.M_CaseHeaderLeadLink:hover :nth-child(-n + 2) {
+  color: var(--grey);
+}
+
+.M_Navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
