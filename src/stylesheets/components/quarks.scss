@@ -23,15 +23,18 @@
 }
 
 .Q_AvatarPic {
-  padding-left: 0.508vw;
+  margin-left: 0.508vw;
 
   width: 15.234vw;
   height: 15.234vw;
+  // background-size: cover;
+  // background-position: center;
+  // background-image: url('./images/img-0_slow.jpg');
 }
 
 .avatarContainer {
   position: relative;
-  display: inline-block; /* Для правильного отображения */
+  width: fit-content;
 }
 
 .gifka {
@@ -60,13 +63,6 @@
 .Q_BigPic {
   width: 51.563vw;
   height: 30.625vw;
-
-  opacity: 0; /* делаем изображение невидимым, пока оно не загрузилось */
-  transition: opacity 0.3s ease; /* плавный переход */
-}
-
-.Q_BigPic.loaded {
-  opacity: 1; /* делаем изображение видимым, когда загрузилось */
 }
 
 .Q_GiantPic {

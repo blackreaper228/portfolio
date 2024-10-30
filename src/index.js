@@ -129,18 +129,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // const image = new Image()
   // image.src = jpg
   // document.querySelector('.images').appendChild(image)
-
-  document.querySelectorAll('.Q_BigPic').forEach((img) => {
-    const placeholder = img.src // Изображение, которое загружается по умолчанию
-
-    // Обработчик загрузки основной версии
-    img.addEventListener('load', () => {
-      img.classList.add('loaded') // Когда загружено, делаем изображение видимым
-    })
-
-    // Заменяем на основную версию после загрузки миниатюры
-    const fullSrc = img.getAttribute('src')
-    img.setAttribute('src', placeholder) // Показываем миниатюру
-    img.src = fullSrc // Подменяем на основное изображение
-  })
 })

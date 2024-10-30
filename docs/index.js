@@ -161,20 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }); // const image = new Image()
   // image.src = jpg
   // document.querySelector('.images').appendChild(image)
-
-  document.querySelectorAll('.Q_BigPic').forEach(function (img) {
-    var placeholder = img.src; // Изображение, которое загружается по умолчанию
-    // Обработчик загрузки основной версии
-
-    img.addEventListener('load', function () {
-      img.classList.add('loaded'); // Когда загружено, делаем изображение видимым
-    }); // Заменяем на основную версию после загрузки миниатюры
-
-    var fullSrc = img.getAttribute('src');
-    img.setAttribute('src', placeholder); // Показываем миниатюру
-
-    img.src = fullSrc; // Подменяем на основное изображение
-  });
 });
 /******/ })()
 ;
