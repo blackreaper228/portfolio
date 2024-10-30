@@ -60,6 +60,13 @@
 .Q_BigPic {
   width: 51.563vw;
   height: 30.625vw;
+
+  opacity: 0; /* делаем изображение невидимым, пока оно не загрузилось */
+  transition: opacity 0.3s ease; /* плавный переход */
+}
+
+.Q_BigPic.loaded {
+  opacity: 1; /* делаем изображение видимым, когда загрузилось */
 }
 
 .Q_GiantPic {
