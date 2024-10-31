@@ -491,14 +491,144 @@ if (true) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 
+;// CONCATENATED MODULE: ./src/images/img-4.jpg
+const img_4_namespaceObject = __webpack_require__.p + "images/1dda1fd1f3a011b1de21.jpg";
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
+;// CONCATENATED MODULE: ./node_modules/blurhash/dist/esm/index.js
+var q=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","#","$","%","*","+",",","-",".",":",";","=","?","@","[","]","^","_","{","|","}","~"],x=t=>{let e=0;for(let r=0;r<t.length;r++){let n=t[r],l=q.indexOf(n);e=e*83+l}return e},p=(t,e)=>{var r="";for(let n=1;n<=e;n++){let l=Math.floor(t)/Math.pow(83,e-n)%83;r+=q[Math.floor(l)]}return r};var f=t=>{let e=t/255;return e<=.04045?e/12.92:Math.pow((e+.055)/1.055,2.4)},h=t=>{let e=Math.max(0,Math.min(1,t));return e<=.0031308?Math.trunc(e*12.92*255+.5):Math.trunc((1.055*Math.pow(e,.4166666666666667)-.055)*255+.5)},F=t=>t<0?-1:1,M=(t,e)=>F(t)*Math.pow(Math.abs(t),e);var d=class extends Error{constructor(e){super(e),this.name="ValidationError",this.message=e}};var C=t=>{if(!t||t.length<6)throw new d("The blurhash string must be at least 6 characters");let e=x(t[0]),r=Math.floor(e/9)+1,n=e%9+1;if(t.length!==4+2*n*r)throw new d(`blurhash length mismatch: length is ${t.length} but it should be ${4+2*n*r}`)},N=t=>{try{C(t)}catch(e){return{result:!1,errorReason:e.message}}return{result:!0}},z=t=>{let e=t>>16,r=t>>8&255,n=t&255;return[f(e),f(r),f(n)]},L=(t,e)=>{let r=Math.floor(t/361),n=Math.floor(t/19)%19,l=t%19;return[M((r-9)/9,2)*e,M((n-9)/9,2)*e,M((l-9)/9,2)*e]},U=(t,e,r,n)=>{C(t),n=n|1;let l=x(t[0]),m=Math.floor(l/9)+1,b=l%9+1,i=(x(t[1])+1)/166,u=new Array(b*m);for(let o=0;o<u.length;o++)if(o===0){let a=x(t.substring(2,6));u[o]=z(a)}else{let a=x(t.substring(4+o*2,6+o*2));u[o]=L(a,i*n)}let c=e*4,s=new Uint8ClampedArray(c*r);for(let o=0;o<r;o++)for(let a=0;a<e;a++){let y=0,B=0,R=0;for(let w=0;w<m;w++)for(let P=0;P<b;P++){let G=Math.cos(Math.PI*a*P/e)*Math.cos(Math.PI*o*w/r),T=u[P+w*b];y+=T[0]*G,B+=T[1]*G,R+=T[2]*G}let V=h(y),I=h(B),E=h(R);s[4*a+0+o*c]=V,s[4*a+1+o*c]=I,s[4*a+2+o*c]=E,s[4*a+3+o*c]=255}return s},j=U;var A=4,D=(t,e,r,n)=>{let l=0,m=0,b=0,g=e*A;for(let u=0;u<e;u++){let c=A*u;for(let s=0;s<r;s++){let o=c+s*g,a=n(u,s);l+=a*f(t[o]),m+=a*f(t[o+1]),b+=a*f(t[o+2])}}let i=1/(e*r);return[l*i,m*i,b*i]},$=t=>{let e=h(t[0]),r=h(t[1]),n=h(t[2]);return(e<<16)+(r<<8)+n},H=(t,e)=>{let r=Math.floor(Math.max(0,Math.min(18,Math.floor(M(t[0]/e,.5)*9+9.5)))),n=Math.floor(Math.max(0,Math.min(18,Math.floor(M(t[1]/e,.5)*9+9.5)))),l=Math.floor(Math.max(0,Math.min(18,Math.floor(M(t[2]/e,.5)*9+9.5))));return r*19*19+n*19+l},O=(t,e,r,n,l)=>{if(n<1||n>9||l<1||l>9)throw new d("BlurHash must have between 1 and 9 components");if(e*r*4!==t.length)throw new d("Width and height must match the pixels array");let m=[];for(let s=0;s<l;s++)for(let o=0;o<n;o++){let a=o==0&&s==0?1:2,y=D(t,e,r,(B,R)=>a*Math.cos(Math.PI*o*B/e)*Math.cos(Math.PI*s*R/r));m.push(y)}let b=m[0],g=m.slice(1),i="",u=n-1+(l-1)*9;i+=p(u,1);let c;if(g.length>0){let s=Math.max(...g.map(a=>Math.max(...a))),o=Math.floor(Math.max(0,Math.min(82,Math.floor(s*166-.5))));c=(o+1)/166,i+=p(o,1)}else c=1,i+=p(0,1);return i+=p($(b),4),g.forEach(s=>{i+=p(H(s,c),2)}),i},S=(/* unused pure expression or super */ null && (O));
+//# sourceMappingURL=index.js.map
+;// CONCATENATED MODULE: ./src/components/BlurredImage.jsx
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+var BlurredImage = function BlurredImage(_ref) {
+  var imageUrl = _ref.imageUrl,
+      blurhash = _ref.blurhash,
+      width = _ref.width,
+      height = _ref.height,
+      className = _ref.className;
+
+  var _useState = (0,react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      imageLoaded = _useState2[0],
+      setImageLoaded = _useState2[1];
+
+  var _useState3 = (0,react.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      imageError = _useState4[0],
+      setImageError = _useState4[1];
+
+  (0,react.useEffect)(function () {
+    var image = new Image();
+    image.src = imageUrl;
+
+    image.onload = function () {
+      setImageLoaded(true);
+    };
+
+    image.onerror = function () {
+      setImageError(true);
+    };
+
+    return function () {
+      // Clean up the image object
+      image.onload = null;
+      image.onerror = null;
+    };
+  }, [imageUrl]);
+
+  var renderImage = function renderImage() {
+    if (imageError) {
+      // Handle image loading error
+      return /*#__PURE__*/react.createElement("div", null, "Error loading image");
+    }
+
+    if (imageLoaded) {
+      // Image is fully loaded, render the actual image
+      return /*#__PURE__*/react.createElement("img", {
+        src: imageUrl,
+        alt: "Loaded",
+        className: className
+      });
+    }
+
+    if (blurhash) {
+      // Decode the blurhash and render the blurred image
+      var pixels = j(blurhash, width, height);
+      var canvas = document.createElement('canvas');
+      var ctx = canvas.getContext('2d');
+      var imageData = ctx.createImageData(width, height);
+      imageData.data.set(pixels);
+      ctx.putImageData(imageData, 0, 0);
+      var blurredImageUrl = canvas.toDataURL();
+      return /*#__PURE__*/react.createElement("img", {
+        src: blurredImageUrl,
+        alt: "Loading",
+        className: className
+      });
+    } // Render a placeholder or loading state
+
+
+    return /*#__PURE__*/react.createElement("div", null, "Loading...");
+  };
+
+  return /*#__PURE__*/react.createElement("div", null, renderImage());
+};
+
+/* harmony default export */ const components_BlurredImage = (BlurredImage);
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(935);
 ;// CONCATENATED MODULE: ./src/javascript/ComponentExample.jsx
@@ -556,10 +686,149 @@ var ComponentExample = /*#__PURE__*/function (_Component) {
 
 
 
+
+ // page.jsx
+// компонент
+
+var App = function App() {
+  return /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(components_BlurredImage, {
+    imageUrl: img_4_namespaceObject // URL изображения
+    ,
+    blurhash: "LC8Fij^l*O?bl-XUaAXoW*t8w~s;",
+    width: 400,
+    height: 300,
+    className: "Q_BigPic"
+  }));
+}; // рендер компонента с пометкой id (root)
+
+
 document.addEventListener('DOMContentLoaded', function () {
-  var container = document.getElementById('reactComponentRoot');
-  var root = (0,client/* createRoot */.s)(container);
-  root.render( /*#__PURE__*/react.createElement(ComponentExample, null));
+  // Рендер App в #root
+  var rootContainer = document.getElementById('root');
+
+  if (rootContainer) {
+    var root = (0,client/* createRoot */.s)(rootContainer);
+    root.render( /*#__PURE__*/react.createElement(App, null));
+  }
+}); //index.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('nav_kolya').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_adc').addEventListener('click', function () {
+    var ADC = document.getElementById('ADC');
+    var elementPosition = ADC.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_pog').addEventListener('click', function () {
+    var pog = document.getElementById('pog');
+    var elementPosition = pog.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_chat').addEventListener('click', function () {
+    var chat = document.getElementById('chat');
+    var elementPosition = chat.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_jinx').addEventListener('click', function () {
+    var jinx = document.getElementById('jinx');
+    var elementPosition = jinx.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_nice').addEventListener('click', function () {
+    var nice = document.getElementById('nice');
+    var elementPosition = nice.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  });
+  window.addEventListener('scroll', function () {
+    var adc = document.getElementById('ADC');
+    var pog = document.getElementById('pog');
+    var chat = document.getElementById('chat');
+    var jinx = document.getElementById('jinx');
+    var nice = document.getElementById('nice');
+    var nav_adc = document.getElementById('nav_adc');
+    var nav_pog = document.getElementById('nav_pog');
+    var nav_chat = document.getElementById('nav_chat');
+    var nav_jinx = document.getElementById('nav_jinx');
+    var nav_nice = document.getElementById('nav_nice'); // Получаем позиции элемента ADC относительно окна просмотра
+
+    var adcRect = adc.getBoundingClientRect();
+    var pogRect = pog.getBoundingClientRect();
+    var chatRect = chat.getBoundingClientRect();
+    var jinxRect = jinx.getBoundingClientRect();
+    var niceRect = nice.getBoundingClientRect(); // Проверяем, виден ли элемент ADC в пределах видимости
+
+    if (adcRect.top < window.innerHeight && adcRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_adc.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_adc.classList.remove('highlight');
+    }
+
+    if (pogRect.top < window.innerHeight && pogRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_pog.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_pog.classList.remove('highlight');
+    }
+
+    if (chatRect.top < window.innerHeight && chatRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_chat.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_chat.classList.remove('highlight');
+    }
+
+    if (jinxRect.top < window.innerHeight && jinxRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_jinx.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_jinx.classList.remove('highlight');
+    }
+
+    if (niceRect.top < window.innerHeight && niceRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_nice.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_nice.classList.remove('highlight');
+    }
+  }); // const image = new Image()
+  // image.src = jpg
+  // document.querySelector('.images').appendChild(image)
 });
 })();
 
