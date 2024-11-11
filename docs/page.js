@@ -620,7 +620,9 @@ var BlurredImage = function BlurredImage(_ref) {
     return /*#__PURE__*/react.createElement("div", null, "Loading...");
   };
 
-  return /*#__PURE__*/react.createElement("div", null, renderImage());
+  return /*#__PURE__*/react.createElement("div", {
+    "class": "broo"
+  }, renderImage());
 };
 
 /* harmony default export */ const components_BlurredImage = (BlurredImage);

@@ -51,7 +51,7 @@ const BlurredImage = ({ imageUrl, blurhash, className }) => {
     return <div>Loading...</div>
   }
 
-  return <div>{renderImage()}</div>
+  return <div class="broo">{renderImage()}</div>
 }
 
 export default BlurredImage
