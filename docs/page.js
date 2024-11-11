@@ -954,28 +954,7 @@ document.addEventListener('DOMContentLoaded', function () {
   renderImage('gif2', javascript_images[35]);
   renderImage('gif3', javascript_images[36]);
   renderImage('gif4', javascript_images[37]);
-}); // // компонент
-// const App = () => (
-//   <div>
-//     {imageData.map((data, index) => (
-//       <BlurredImage
-//         key={index} 
-//         imageUrl={data.imageUrl} 
-//         blurhash={data.blurhash} 
-//         className={className}
-//       />
-//     ))}
-//   </div>
-// )
-// // рендер компонента с пометкой id (root)
-// document.addEventListener('DOMContentLoaded', () => {
-//   const rootContainer = document.getElementById('root')
-//   if (rootContainer) {
-//     const root = createRoot(rootContainer)
-//     root.render(<App />)
-//   }
-// })
-//index.js
+}); //index.js
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nav_kolya').addEventListener('click', function () {

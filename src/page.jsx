@@ -60,29 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// // компонент
-// const App = () => (
-//   <div>
-//     {imageData.map((data, index) => (
-//       <BlurredImage
-//         key={index} 
-//         imageUrl={data.imageUrl} 
-//         blurhash={data.blurhash} 
-//         className={className}
-//       />
-//     ))}
-//   </div>
-// )
-
-// // рендер компонента с пометкой id (root)
-// document.addEventListener('DOMContentLoaded', () => {
-//   const rootContainer = document.getElementById('root')
-//   if (rootContainer) {
-//     const root = createRoot(rootContainer)
-//     root.render(<App />)
-//   }
-// })
-
 //index.js
 
 document.addEventListener('DOMContentLoaded', () => {
