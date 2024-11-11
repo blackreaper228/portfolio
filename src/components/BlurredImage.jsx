@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { useState, useEffect } from 'react'
 import { decode } from 'blurhash'
 
-const BlurredImage = ({ imageUrl, blurhash, width, height, className }) => {
+const BlurredImage = ({ imageUrl, blurhash, className }) => {
   const [imageLoaded, setImageLoaded] = useState(false)
   const [imageError, setImageError] = useState(false)
 
@@ -19,7 +19,6 @@ const BlurredImage = ({ imageUrl, blurhash, width, height, className }) => {
     }
 
     return () => {
-      // Clean up the image object
       image.onload = null
       image.onerror = null
     }
@@ -27,19 +26,20 @@ const BlurredImage = ({ imageUrl, blurhash, width, height, className }) => {
 
   const renderImage = () => {
     if (imageError) {
-      // Handle image loading error
       return <div>Error loading image</div>
     }
 
     if (imageLoaded) {
-      // Image is fully loaded, render the actual image
       return <img src={imageUrl} alt="Loaded" className={className} />
     }
 
     if (blurhash) {
-      // Decode the blurhash and render the blurred image
+      const width = 32
+      const height = 32
       const pixels = decode(blurhash, width, height)
       const canvas = document.createElement('canvas')
+      canvas.width = width
+      canvas.height = height
       const ctx = canvas.getContext('2d')
       const imageData = ctx.createImageData(width, height)
       imageData.data.set(pixels)
@@ -48,7 +48,6 @@ const BlurredImage = ({ imageUrl, blurhash, width, height, className }) => {
       return <img src={blurredImageUrl} alt="Loading" className={className} />
     }
 
-    // Render a placeholder or loading state
     return <div>Loading...</div>
   }
 

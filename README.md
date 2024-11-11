@@ -10,4 +10,3 @@ cd portfolio
 yarn
 yarn start
 ```
-new_test

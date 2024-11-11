@@ -528,8 +528,6 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 
-;// CONCATENATED MODULE: ./src/images/img-4.jpg
-const img_4_namespaceObject = __webpack_require__.p + "images/1dda1fd1f3a011b1de21.jpg";
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
@@ -557,8 +555,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var BlurredImage = function BlurredImage(_ref) {
   var imageUrl = _ref.imageUrl,
       blurhash = _ref.blurhash,
-      width = _ref.width,
-      height = _ref.height,
       className = _ref.className;
 
   var _useState = (0,react.useState)(false),
@@ -584,7 +580,6 @@ var BlurredImage = function BlurredImage(_ref) {
     };
 
     return function () {
-      // Clean up the image object
       image.onload = null;
       image.onerror = null;
     };
@@ -592,12 +587,10 @@ var BlurredImage = function BlurredImage(_ref) {
 
   var renderImage = function renderImage() {
     if (imageError) {
-      // Handle image loading error
       return /*#__PURE__*/react.createElement("div", null, "Error loading image");
     }
 
     if (imageLoaded) {
-      // Image is fully loaded, render the actual image
       return /*#__PURE__*/react.createElement("img", {
         src: imageUrl,
         alt: "Loaded",
@@ -606,9 +599,12 @@ var BlurredImage = function BlurredImage(_ref) {
     }
 
     if (blurhash) {
-      // Decode the blurhash and render the blurred image
+      var width = 32;
+      var height = 32;
       var pixels = j(blurhash, width, height);
       var canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
       var ctx = canvas.getContext('2d');
       var imageData = ctx.createImageData(width, height);
       imageData.data.set(pixels);
@@ -619,8 +615,7 @@ var BlurredImage = function BlurredImage(_ref) {
         alt: "Loading",
         className: className
       });
-    } // Render a placeholder or loading state
-
+    }
 
     return /*#__PURE__*/react.createElement("div", null, "Loading...");
   };
@@ -629,88 +624,358 @@ var BlurredImage = function BlurredImage(_ref) {
 };
 
 /* harmony default export */ const components_BlurredImage = (BlurredImage);
-// EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(935);
-;// CONCATENATED MODULE: ./src/javascript/ComponentExample.jsx
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+;// CONCATENATED MODULE: ./src/images/main/img-00.jpg
+const img_00_namespaceObject = __webpack_require__.p + "images/cd16c6d67ca27a883225.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-0.jpg
+const img_0_namespaceObject = __webpack_require__.p + "images/714f4c55e1f2c7e0d3d1.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-1.jpg
+const img_1_namespaceObject = __webpack_require__.p + "images/59fa5b22793062a68e4d.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-2.jpg
+const img_2_namespaceObject = __webpack_require__.p + "images/464ff265fd01ffbd3dc1.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-3.jpg
+const img_3_namespaceObject = __webpack_require__.p + "images/53d38beaa17e6d6cc8a7.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-4.jpg
+const img_4_namespaceObject = __webpack_require__.p + "images/1dda1fd1f3a011b1de21.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-5.jpg
+const img_5_namespaceObject = __webpack_require__.p + "images/a7ed4df8e703c006722a.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-6.jpg
+const img_6_namespaceObject = __webpack_require__.p + "images/555f768e25aa829d9b59.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-7.jpg
+const img_7_namespaceObject = __webpack_require__.p + "images/70d2aae81a188846715c.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-8.jpg
+const img_8_namespaceObject = __webpack_require__.p + "images/c9ab70b4af6f9ae1655b.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-9.jpg
+const img_9_namespaceObject = __webpack_require__.p + "images/526a1b528fbaa37004bb.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-10.jpg
+const img_10_namespaceObject = __webpack_require__.p + "images/460ba109b6f40ebe8591.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-11.jpg
+const img_11_namespaceObject = __webpack_require__.p + "images/9cb49e73663cf0d31a2d.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-12.jpg
+const img_12_namespaceObject = __webpack_require__.p + "images/e5bbfb7ebd8121286c9f.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-13.jpg
+const img_13_namespaceObject = __webpack_require__.p + "images/38bfa342e6a9ccb3caf2.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-14.jpg
+const img_14_namespaceObject = __webpack_require__.p + "images/146c381f19234080f16d.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-15.jpg
+const img_15_namespaceObject = __webpack_require__.p + "images/bc9a02d8cb40f071da5b.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-16.jpg
+const img_16_namespaceObject = __webpack_require__.p + "images/3ad641438e156a4e6f64.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-17.jpg
+const img_17_namespaceObject = __webpack_require__.p + "images/31dfed1dca0409368b5e.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-18.jpg
+const img_18_namespaceObject = __webpack_require__.p + "images/28465af06d47e6d6f19e.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-19.jpg
+const img_19_namespaceObject = __webpack_require__.p + "images/a187248e13f225e1719d.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-20.jpg
+const img_20_namespaceObject = __webpack_require__.p + "images/3fa65a9a96a2c521bc15.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-21.jpg
+const img_21_namespaceObject = __webpack_require__.p + "images/538cf7704cea8b9e20f4.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-22.jpg
+const img_22_namespaceObject = __webpack_require__.p + "images/f38c24919c2aa1ec4101.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-23.jpg
+const img_23_namespaceObject = __webpack_require__.p + "images/ed7aad22abe986dbc6c1.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-24.jpg
+const img_24_namespaceObject = __webpack_require__.p + "images/06b7fd1f393963f3aa72.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-25.jpg
+const img_25_namespaceObject = __webpack_require__.p + "images/89da563f9d8982e2c3f5.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-26.jpg
+const img_26_namespaceObject = __webpack_require__.p + "images/513280c5b217d4959422.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-27.jpg
+const img_27_namespaceObject = __webpack_require__.p + "images/8479a2184f207beb3f90.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-28.jpg
+const img_28_namespaceObject = __webpack_require__.p + "images/7544d45101058b145d83.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-29.jpg
+const img_29_namespaceObject = __webpack_require__.p + "images/fa1c404d88a63d43536f.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-30.jpg
+const img_30_namespaceObject = __webpack_require__.p + "images/bb603f47641d26e0f926.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-31.jpg
+const img_31_namespaceObject = __webpack_require__.p + "images/b49d4c4ed5d6a9bc9d62.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-32.jpg
+const img_32_namespaceObject = __webpack_require__.p + "images/93bc694fafc6b0a87d14.jpg";
+;// CONCATENATED MODULE: ./src/images/main/gif-0.gif
+const gif_0_namespaceObject = __webpack_require__.p + "images/c86d74ff7615470abfb7.gif";
+;// CONCATENATED MODULE: ./src/images/main/gif-01.gif
+const gif_01_namespaceObject = __webpack_require__.p + "images/1b8d5b7f6d0c38435ba9.gif";
+;// CONCATENATED MODULE: ./src/images/main/gif-02.gif
+const gif_02_namespaceObject = __webpack_require__.p + "images/463d6ed87faa34c790fa.gif";
+;// CONCATENATED MODULE: ./src/images/main/gif-03.gif
+const gif_03_namespaceObject = __webpack_require__.p + "images/ee71ac6a9ae71255b392.gif";
+;// CONCATENATED MODULE: ./src/images/main/gif-04.gif
+const gif_04_namespaceObject = __webpack_require__.p + "images/d9d04ac865615ba017bb.gif";
+;// CONCATENATED MODULE: ./src/javascript/images.js
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
 
-var ComponentExample = /*#__PURE__*/function (_Component) {
-  _inherits(ComponentExample, _Component);
-
-  var _super = _createSuper(ComponentExample);
-
-  function ComponentExample(props) {
-    _classCallCheck(this, ComponentExample);
-
-    return _super.call(this, props);
-  }
-
-  _createClass(ComponentExample, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react.createElement("div", {
-        className: "ComponentExample"
-      }, "This is a React component");
-    }
-  }]);
-
-  return ComponentExample;
-}(react.Component);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var imageData = [{
+  imageUrl: img_00_namespaceObject,
+  blurhash: 'LWBhlkt7ugnUM{*It8XgR%V@WAbY',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_0_namespaceObject,
+  blurhash: 'LLGIo.~q00t7004n-;t7M{ofxufQ',
+  className: 'Q_AvatarPic gifka'
+}, {
+  imageUrl: img_1_namespaceObject,
+  blurhash: 'LdMQ#WtCEKROxbbIa{fi}_QpxIk.',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_2_namespaceObject,
+  blurhash: 'L36S1v#r8wl5L8NF-@bbk}k:tBkD',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_3_namespaceObject,
+  blurhash: 'LVCG7A}?#7n,xCxWxGoJI9jY-:$~',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_4_namespaceObject,
+  blurhash: 'LB7.?e^,.r?bhdXoV%XpbBt8xIs;',
+  className: 'Q_BigPic'
+}, {
+  imageUrl: img_5_namespaceObject,
+  blurhash: 'LcM$4m%|XOs;{;X*Sxi_VtaekCt7',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_6_namespaceObject,
+  blurhash: 'L3AJ~A~q9FM{_3IU%MIU00M{IUWB',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_7_namespaceObject,
+  blurhash: 'LRL;Bty,b[spmvlJRRs;Ins:M|Vu',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_8_namespaceObject,
+  blurhash: 'L13uo}IU~qt7WBj[ayay00%M00Rj',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_9_namespaceObject,
+  blurhash: 'LFAJO1FlIR%5^}t8noohts-HNXWj',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_10_namespaceObject,
+  blurhash: 'LIA9sw~W-y?G%fx^%N%LOOozxfog',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_11_namespaceObject,
+  blurhash: 'L79sMr@-^PM?9ko@D$-sS^I=xuRh',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_12_namespaceObject,
+  blurhash: 'L47KPszV004RMMxZP7EK9pTKxf:Q',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_13_namespaceObject,
+  blurhash: 'L13uWjr=53RPE2W-a$oz0co{=*V}',
+  className: 'Q_MedPic'
+}, {
+  imageUrl: img_14_namespaceObject,
+  blurhash: 'LF8ChYs;1CIoNpWVx0oM5yWB=Rt7',
+  className: 'Q_MedPic'
+}, {
+  imageUrl: img_15_namespaceObject,
+  blurhash: 'L36H$Exu00IUIURjofof00M{~q-;',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_16_namespaceObject,
+  blurhash: 'L%76kLj[pYfjknfkf7fQq8fQa3fQ',
+  className: 'Q_GiantPic'
+}, {
+  imageUrl: img_17_namespaceObject,
+  blurhash: 'L33]xvb@J5WU.QW.SeWB4UWBwhV[',
+  className: 'Q_MedPic'
+}, {
+  imageUrl: img_18_namespaceObject,
+  blurhash: 'L66kVC_34n00t7ofafWB009F?b~q',
+  className: 'Q_GiantPic'
+}, {
+  imageUrl: img_19_namespaceObject,
+  blurhash: 'L12ZSHt*D6M3TVX4nAr_8yQ;*FyU',
+  className: 'Q_GiantPic'
+}, {
+  imageUrl: img_20_namespaceObject,
+  blurhash: 'LJHKnB$@C=H[T|GhN{a_Jn-N=M$j',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_21_namespaceObject,
+  blurhash: 'L25E8LEV0J}{^GE1ER~C1Eor^8Ra',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_22_namespaceObject,
+  blurhash: 'LJDREpO50KwB-VoMI.sE0ysF^OS@',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_23_namespaceObject,
+  blurhash: 'LEE{01?ux]NH~WInV?p09YRPxb%M',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_24_namespaceObject,
+  blurhash: 'L8C~Vg-1wN}MM{TmOaGCE1IdTlK8',
+  className: 'Q_BigPic'
+}, {
+  imageUrl: img_25_namespaceObject,
+  blurhash: 'LGF}[=000$}[M{M_^,xD8^%hn3oz',
+  className: 'Q_MedPic'
+}, {
+  imageUrl: img_26_namespaceObject,
+  blurhash: 'LkPZr-fR~poeogayxtj[_2j@D*a#',
+  className: 'Q_MedPic'
+}, {
+  imageUrl: img_27_namespaceObject,
+  blurhash: 'LILX[7~X}]EK?HWUInInr]RiEKxu',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_28_namespaceObject,
+  blurhash: 'LXP6%Z.YEKMiIUE0M{R%+kWTVtM{',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_29_namespaceObject,
+  blurhash: 'LaO,db~E0crHVuOlS^VaY2bsa2ah',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_30_namespaceObject,
+  blurhash: 'LFH.KT?[4n4nRj%MRikB00Dj%M?b',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_31_namespaceObject,
+  blurhash: 'LZPj71zv?wG+-qX7R%nj?dTGNEv-',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_32_namespaceObject,
+  blurhash: 'L354:2:r043|yTRRMN%d0~Fs^4{-',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: gif_01_namespaceObject,
+  blurhash: 'LXNSIA.iKIr_m]pUXRi~E1wOXOkC',
+  className: 'Q_BigPic'
+}, {
+  imageUrl: gif_02_namespaceObject,
+  blurhash: 'L009jvWBj[WBayfQfQfQWBofayof',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: gif_03_namespaceObject,
+  blurhash: 'L14ec*D%00~q~qj@D%WBMy%Moy9F',
+  className: 'Q_GiantPic'
+}, {
+  imageUrl: gif_04_namespaceObject,
+  blurhash: 'L14LROay9FNG~qj?D%ay-=fiRjs:',
+  className: 'Q_MedPic'
+}];
+/* harmony default export */ const javascript_images = (imageData);
 ;// CONCATENATED MODULE: ./src/page.jsx
 
 
 
 
-
  // page.jsx
-// компонент
 
-var App = function App() {
-  return /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(components_BlurredImage, {
-    imageUrl: img_4_namespaceObject // URL изображения
-    ,
-    blurhash: "LC8Fij^l*O?bl-XUaAXoW*t8w~s;",
-    width: 400,
-    height: 300,
-    className: "Q_BigPic"
-  }));
-}; // рендер компонента с пометкой id (root)
+var renderImage = function renderImage(containerId, imageProps) {
+  var container = document.getElementById(containerId);
 
+  if (container) {
+    var root = (0,client/* createRoot */.s)(container);
+    root.render( /*#__PURE__*/react.createElement(components_BlurredImage, {
+      imageUrl: imageProps.imageUrl,
+      blurhash: imageProps.blurhash,
+      className: imageProps.className
+    }));
+  }
+};
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Рендер App в #root
-  var rootContainer = document.getElementById('root');
-
-  if (rootContainer) {
-    var root = (0,client/* createRoot */.s)(rootContainer);
-    root.render( /*#__PURE__*/react.createElement(App, null));
-  }
-}); //index.js
+  renderImage('00', javascript_images[0]);
+  renderImage('1', javascript_images[2]);
+  renderImage('2', javascript_images[3]);
+  renderImage('3', javascript_images[4]);
+  renderImage('4', javascript_images[5]);
+  renderImage('5', javascript_images[6]);
+  renderImage('6', javascript_images[7]);
+  renderImage('7', javascript_images[8]);
+  renderImage('8', javascript_images[9]);
+  renderImage('9', javascript_images[10]);
+  renderImage('10', javascript_images[11]);
+  renderImage('11', javascript_images[12]);
+  renderImage('12', javascript_images[13]);
+  renderImage('13', javascript_images[14]);
+  renderImage('14', javascript_images[15]);
+  renderImage('15', javascript_images[16]);
+  renderImage('16', javascript_images[17]);
+  renderImage('17', javascript_images[18]);
+  renderImage('18', javascript_images[19]);
+  renderImage('19', javascript_images[20]);
+  renderImage('20', javascript_images[21]);
+  renderImage('21', javascript_images[22]);
+  renderImage('22', javascript_images[23]);
+  renderImage('23', javascript_images[24]);
+  renderImage('24', javascript_images[25]);
+  renderImage('25', javascript_images[26]);
+  renderImage('26', javascript_images[27]);
+  renderImage('27', javascript_images[28]);
+  renderImage('28', javascript_images[29]);
+  renderImage('29', javascript_images[30]);
+  renderImage('30', javascript_images[31]);
+  renderImage('31', javascript_images[32]);
+  renderImage('32', javascript_images[33]);
+  renderImage('gif1', javascript_images[34]);
+  renderImage('gif2', javascript_images[35]);
+  renderImage('gif3', javascript_images[36]);
+  renderImage('gif4', javascript_images[37]);
+}); // // компонент
+// const App = () => (
+//   <div>
+//     {imageData.map((data, index) => (
+//       <BlurredImage
+//         key={index} 
+//         imageUrl={data.imageUrl} 
+//         blurhash={data.blurhash} 
+//         className={className}
+//       />
+//     ))}
+//   </div>
+// )
+// // рендер компонента с пометкой id (root)
+// document.addEventListener('DOMContentLoaded', () => {
+//   const rootContainer = document.getElementById('root')
+//   if (rootContainer) {
+//     const root = createRoot(rootContainer)
+//     root.render(<App />)
+//   }
+// })
+//index.js
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nav_kolya').addEventListener('click', function () {
