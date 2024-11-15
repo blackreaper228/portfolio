@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 448:
+/***/ 4448:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 /**
@@ -17,7 +17,7 @@
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(294),ca=__webpack_require__(840);function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b)}
+var aa=__webpack_require__(7294),ca=__webpack_require__(3840);function p(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var da=new Set,ea={};function fa(a,b){ha(a,b);ha(a+"Capture",b)}
 function ha(a,b){ea[a]=b;for(a=0;a<b.length;a++)da.add(b[a])}
 var ia=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ja=Object.prototype.hasOwnProperty,ka=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,la=
 {},ma={};function oa(a){if(ja.call(ma,a))return!0;if(ja.call(la,a))return!1;if(ka.test(a))return ma[a]=!0;la[a]=!0;return!1}function pa(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -338,7 +338,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!pl(c))throw Er
 var __webpack_unused_export__;
 
 
-var m = __webpack_require__(935);
+var m = __webpack_require__(3935);
 if (true) {
   exports.s = m.createRoot;
   __webpack_unused_export__ = m.hydrateRoot;
@@ -347,7 +347,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 935:
+/***/ 3935:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -375,13 +375,13 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(448);
+  module.exports = __webpack_require__(4448);
 } else {}
 
 
 /***/ }),
 
-/***/ 408:
+/***/ 2408:
 /***/ ((__unused_webpack_module, exports) => {
 
 /**
@@ -414,13 +414,13 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
 
 /***/ }),
 
-/***/ 294:
+/***/ 7294:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 
 if (true) {
-  module.exports = __webpack_require__(408);
+  module.exports = __webpack_require__(2408);
 } else {}
 
 
@@ -452,7 +452,7 @@ exports.unstable_shouldYield=M;exports.unstable_wrapCallback=function(a){var b=y
 
 /***/ }),
 
-/***/ 840:
+/***/ 3840:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -529,7 +529,7 @@ var __webpack_exports__ = {};
 (() => {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(294);
+var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
 ;// CONCATENATED MODULE: ./node_modules/blurhash/dist/esm/index.js
@@ -585,6 +585,12 @@ var BlurredImage = function BlurredImage(_ref) {
     };
   }, [imageUrl]);
 
+  var handleClick = function handleClick() {
+    document.querySelector('#ModalWindow').classList.toggle('U_Hide'); // Или вызовите Element('#ModalWindow') здесь, если это функция
+
+    document.querySelector('.ZoomPic').style.cursor = 'zoom-out';
+  };
+
   var renderImage = function renderImage() {
     if (imageError) {
       return /*#__PURE__*/react.createElement("div", null, "Error loading image");
@@ -621,7 +627,8 @@ var BlurredImage = function BlurredImage(_ref) {
   };
 
   return /*#__PURE__*/react.createElement("div", {
-    "class": "broo"
+    className: "ZoomPic",
+    onClick: handleClick
   }, renderImage());
 };
 
@@ -647,7 +654,7 @@ const img_7_namespaceObject = __webpack_require__.p + "images/70d2aae81a18884671
 ;// CONCATENATED MODULE: ./src/images/main/img-8.jpg
 const img_8_namespaceObject = __webpack_require__.p + "images/c9ab70b4af6f9ae1655b.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-9.jpg
-const img_9_namespaceObject = __webpack_require__.p + "images/526a1b528fbaa37004bb.jpg";
+const img_9_namespaceObject = __webpack_require__.p + "images/f955da399362d7215ad6.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-10.jpg
 const img_10_namespaceObject = __webpack_require__.p + "images/460ba109b6f40ebe8591.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-11.jpg
@@ -704,7 +711,22 @@ const gif_02_namespaceObject = __webpack_require__.p + "images/463d6ed87faa34c79
 const gif_03_namespaceObject = __webpack_require__.p + "images/ee71ac6a9ae71255b392.gif";
 ;// CONCATENATED MODULE: ./src/images/main/gif-04.gif
 const gif_04_namespaceObject = __webpack_require__.p + "images/d9d04ac865615ba017bb.gif";
+;// CONCATENATED MODULE: ./src/images/main/img-00_mobile.jpg
+const img_00_mobile_namespaceObject = __webpack_require__.p + "images/57331ab22572653607ce.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-5_mobile.jpg
+const img_5_mobile_namespaceObject = __webpack_require__.p + "images/fd9e42f7cc905d72873b.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-9_mobile.jpg
+const img_9_mobile_namespaceObject = __webpack_require__.p + "images/6ccf982bb7f5cba0e425.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-15_mobile.jpg
+const img_15_mobile_namespaceObject = __webpack_require__.p + "images/359ca349255ff19e2577.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-24_mobile.jpg
+const img_24_mobile_namespaceObject = __webpack_require__.p + "images/0243660c509412f3acc0.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/images.js
+
+
+
+
+
 
 
 
@@ -896,6 +918,26 @@ var imageData = [{
   imageUrl: gif_04_namespaceObject,
   blurhash: 'L14LROay9FNG~qj?D%ay-=fiRjs:',
   className: 'Q_MedPic'
+}, {
+  imageUrl: img_00_mobile_namespaceObject,
+  blurhash: 'LO9+K1xbqDs=Vt*IxbyWRRV@%3nS',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_5_mobile_namespaceObject,
+  blurhash: 'LULCrx{?IAS$HuVHt7koS_NsX8R%',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_9_mobile_namespaceObject,
+  blurhash: 'LBB2gega5faQy2I*V=sr78#_$oNE',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_15_mobile_namespaceObject,
+  blurhash: 'L89tP=_3D%IU~qoeNFRQM{IUWBay',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_24_mobile_namespaceObject,
+  blurhash: 'LMF}}--x*5Q=%Nx9IwRhx{TlV[tR',
+  className: 'Q_Cover'
 }];
 /* harmony default export */ const javascript_images = (imageData);
 ;// CONCATENATED MODULE: ./src/page.jsx
@@ -918,45 +960,138 @@ var renderImage = function renderImage(containerId, imageProps) {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  renderImage('00', javascript_images[0]);
-  renderImage('1', javascript_images[2]);
-  renderImage('2', javascript_images[3]);
-  renderImage('3', javascript_images[4]);
-  renderImage('4', javascript_images[5]);
-  renderImage('5', javascript_images[6]);
-  renderImage('6', javascript_images[7]);
-  renderImage('7', javascript_images[8]);
-  renderImage('8', javascript_images[9]);
-  renderImage('9', javascript_images[10]);
-  renderImage('10', javascript_images[11]);
-  renderImage('11', javascript_images[12]);
-  renderImage('12', javascript_images[13]);
-  renderImage('13', javascript_images[14]);
-  renderImage('14', javascript_images[15]);
-  renderImage('15', javascript_images[16]);
-  renderImage('16', javascript_images[17]);
-  renderImage('17', javascript_images[18]);
-  renderImage('18', javascript_images[19]);
-  renderImage('19', javascript_images[20]);
-  renderImage('20', javascript_images[21]);
-  renderImage('21', javascript_images[22]);
-  renderImage('22', javascript_images[23]);
-  renderImage('23', javascript_images[24]);
-  renderImage('24', javascript_images[25]);
-  renderImage('25', javascript_images[26]);
-  renderImage('26', javascript_images[27]);
-  renderImage('27', javascript_images[28]);
-  renderImage('28', javascript_images[29]);
-  renderImage('29', javascript_images[30]);
-  renderImage('30', javascript_images[31]);
-  renderImage('31', javascript_images[32]);
-  renderImage('32', javascript_images[33]);
-  renderImage('gif1', javascript_images[34]);
-  renderImage('gif2', javascript_images[35]);
-  renderImage('gif3', javascript_images[36]);
-  renderImage('gif4', javascript_images[37]);
-}); //index.js
+var mediaQuery = window.matchMedia('(min-width: 462px)');
+
+function renderImagesIfScreenWidthMatches(e) {
+  if (e.matches) {
+    // Если ширина экрана больше 462px
+    document.addEventListener('DOMContentLoaded', function () {
+      renderImage('00', javascript_images[0]);
+      renderImage('1', javascript_images[2]);
+      renderImage('2', javascript_images[3]);
+      renderImage('3', javascript_images[4]);
+      renderImage('4', javascript_images[5]);
+      renderImage('5', javascript_images[6]);
+      renderImage('6', javascript_images[7]);
+      renderImage('7', javascript_images[8]);
+      renderImage('8', javascript_images[9]);
+      renderImage('9', javascript_images[10]);
+      renderImage('10', javascript_images[11]);
+      renderImage('11', javascript_images[12]);
+      renderImage('12', javascript_images[13]);
+      renderImage('13', javascript_images[14]);
+      renderImage('14', javascript_images[15]);
+      renderImage('15', javascript_images[16]);
+      renderImage('16', javascript_images[17]);
+      renderImage('17', javascript_images[18]);
+      renderImage('18', javascript_images[19]);
+      renderImage('19', javascript_images[20]);
+      renderImage('20', javascript_images[21]);
+      renderImage('21', javascript_images[22]);
+      renderImage('22', javascript_images[23]);
+      renderImage('23', javascript_images[24]);
+      renderImage('24', javascript_images[25]);
+      renderImage('25', javascript_images[26]);
+      renderImage('26', javascript_images[27]);
+      renderImage('27', javascript_images[28]);
+      renderImage('28', javascript_images[29]);
+      renderImage('29', javascript_images[30]);
+      renderImage('30', javascript_images[31]);
+      renderImage('31', javascript_images[32]);
+      renderImage('32', javascript_images[33]);
+      renderImage('gif1', javascript_images[34]);
+      renderImage('gif2', javascript_images[35]);
+      renderImage('gif3', javascript_images[36]);
+      renderImage('gif4', javascript_images[37]);
+    });
+  } else {
+    document.addEventListener('DOMContentLoaded', function () {
+      renderImage('00', javascript_images[38]);
+      renderImage('1', javascript_images[2]);
+      renderImage('2', javascript_images[3]);
+      renderImage('3', javascript_images[4]);
+      renderImage('4', javascript_images[5]);
+      renderImage('5', javascript_images[39]);
+      renderImage('6', javascript_images[7]);
+      renderImage('7', javascript_images[8]);
+      renderImage('8', javascript_images[9]);
+      renderImage('9', javascript_images[40]);
+      renderImage('10', javascript_images[11]);
+      renderImage('11', javascript_images[12]);
+      renderImage('12', javascript_images[13]);
+      renderImage('13', javascript_images[14]);
+      renderImage('14', javascript_images[15]);
+      renderImage('15', javascript_images[41]);
+      renderImage('16', javascript_images[17]);
+      renderImage('17', javascript_images[18]);
+      renderImage('18', javascript_images[19]);
+      renderImage('19', javascript_images[20]);
+      renderImage('20', javascript_images[21]);
+      renderImage('21', javascript_images[22]);
+      renderImage('22', javascript_images[23]);
+      renderImage('23', javascript_images[24]);
+      renderImage('24', javascript_images[42]);
+      renderImage('25', javascript_images[26]);
+      renderImage('26', javascript_images[27]);
+      renderImage('27', javascript_images[28]);
+      renderImage('28', javascript_images[29]);
+      renderImage('29', javascript_images[30]);
+      renderImage('30', javascript_images[31]);
+      renderImage('31', javascript_images[32]);
+      renderImage('32', javascript_images[33]);
+      renderImage('gif1', javascript_images[34]);
+      renderImage('gif2', javascript_images[35]);
+      renderImage('gif3', javascript_images[36]);
+      renderImage('gif4', javascript_images[37]);
+    });
+  }
+}
+
+renderImagesIfScreenWidthMatches(mediaQuery);
+mediaQuery.addListener(renderImagesIfScreenWidthMatches); // document.addEventListener('DOMContentLoaded', () => {
+//   renderImage('00', imageData[0])
+//   renderImage('1', imageData[2])
+//   renderImage('2', imageData[3])
+//   renderImage('3', imageData[4])
+//   renderImage('4', imageData[5])
+//   renderImage('5', imageData[6])
+//   renderImage('6', imageData[7])
+//   renderImage('7', imageData[8])
+//   renderImage('8', imageData[9])
+//   renderImage('9', imageData[10])
+//   renderImage('10', imageData[11])
+//   renderImage('11', imageData[12])
+//   renderImage('12', imageData[13])
+//   renderImage('13', imageData[14])
+//   renderImage('14', imageData[15])
+//   renderImage('15', imageData[16])
+//   renderImage('16', imageData[17])
+//   renderImage('17', imageData[18])
+//   renderImage('18', imageData[19])
+//   renderImage('19', imageData[20])
+//   renderImage('20', imageData[21])
+//   renderImage('21', imageData[22])
+//   renderImage('22', imageData[23])
+//   renderImage('23', imageData[24])
+//   renderImage('24', imageData[25])
+//   renderImage('25', imageData[26])
+//   renderImage('26', imageData[27])
+//   renderImage('27', imageData[28])
+//   renderImage('28', imageData[29])
+//   renderImage('29', imageData[30])
+//   renderImage('30', imageData[31])
+//   renderImage('31', imageData[32])
+//   renderImage('32', imageData[33])
+//   renderImage('gif1', imageData[34])
+//   renderImage('gif2', imageData[35])
+//   renderImage('gif3', imageData[36])
+//   renderImage('gif4', imageData[37])
+// })
+//index.js
+
+function Element(e) {
+  document.querySelector(e).classList.remove('U_Hide');
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nav_kolya').addEventListener('click', function () {

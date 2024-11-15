@@ -14,6 +14,9 @@
   </head>
 
   <body class="index">
+    <div class="modal U_Hide" id="ModalWindow">
+      <img class="ZoomPic modalPic" src="./images/img-1.jpg" alt="" /><img />
+    </div>
     <div class="W_ConnectorV304">
       <div class="W_ConnectorV392">
         <a class="A_NavText" id="nav_kolya">Коля Рипер</a>
@@ -89,8 +92,9 @@
                     <div class="W_CaseHeaderDescriptionText">
                       <h3>ADC</h3>
                       <p>
-                        ADC — cервис-хаб для молодых дизайнеров с уникальными
-                        офферами и возможностью найти связи в креативных&nbsp;индустриях.
+                        ADC&nbsp;&mdash; cервис-хаб для молодых дизайнеров
+                        с&nbsp;уникальными офферами и&nbsp;возможностью найти
+                        связи в&nbsp;креативных индустриях.
                       </p>
                     </div>
                     <div class="W_Tags">
@@ -103,9 +107,9 @@
               </div>
               <div class="W_ConnectorV40">
                 <div class="W_ConnectorH40">
-                 <div id="1"></div>
-                 <div id="2"></div>
-                 <div id="3"></div>
+                  <div id="1"></div>
+                  <div id="2"></div>
+                  <div id="3"></div>
                 </div>
                 <div class="W_ConnectorH40">
                   <div class="W_ConnectorV40">
@@ -113,11 +117,6 @@
                     <div id="28"></div>
                   </div>
                   <div id="4"></div>
-                  <!-- <img
-                    class="Q_BigPic"
-                    src="./images/img-4.jpg"
-                    loading="lazy"
-                  /> -->
                 </div>
               </div>
             </div>
@@ -143,8 +142,8 @@
                     <div class="W_CaseHeaderDescriptionText">
                       <h3>Пограничная</h3>
                       <p>
-                        Проект, передающий взгляд на человека с пограничным
-                        расстройством&nbsp;личности.
+                        Проект, передающий взгляд на&nbsp;человека
+                        с&nbsp;пограничным расстройством личности.
                       </p>
                     </div>
                     <div class="W_Tags">
@@ -191,9 +190,9 @@
                     <div class="W_CaseHeaderDescriptionText">
                       <h3>Чат-а-тет</h3>
                       <p>
-                        Приложение для общения с искусственным интеллектом,
-                        который развивается в течение разговора, приобретая
-                        хобби и новые черты&nbsp;характера.
+                        Приложение для общения с&nbsp;искусственным интеллектом,
+                        который развивается в&nbsp;течение разговора, приобретая
+                        хобби и&nbsp;новые черты характера.
                       </p>
                     </div>
                     <div class="W_Tags">
@@ -239,7 +238,8 @@
                     <div class="W_CaseHeaderDescriptionText">
                       <h3>JINX</h3>
                       <p>
-                        Медиа о хоррор-играх, погружающее тебя в&nbsp;атмосферу&nbsp;ужаса.
+                        Медиа о хоррор-играх, погружающее тебя
+                        в&nbsp;атмосферу&nbsp;ужаса.
                       </p>
                     </div>
                     <div class="W_Tags">
@@ -283,7 +283,7 @@
                   <div class="W_CaseHeaderDescription">
                     <div class="W_CaseHeaderDescriptionText">
                       <h3>Найс Дроп</h3>
-                      <p>Энергетик, для геймеров&nbsp;и&nbsp;киберспортсменов.</p>
+                      <p>Энергетик, для геймеров и&nbsp;киберспортсменов.</p>
                     </div>
                     <div class="W_Tags">
                       <div class="A_Tag">брендинг</div>
@@ -323,7 +323,6 @@
           <div class="A_Btn">Написать мне</div>
           <div class="Q_BtnArrow">↗</div>
         </a>
-        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="37"
@@ -344,4 +343,29 @@
       </div>
     </div>
   </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let ZoomPics = document.querySelectorAll('.ZoomPic')
+      console.log(ZoomPics)
+
+      ZoomPics.forEach((element) => {
+        element.addEventListener('click', function () {
+          console.log(element)
+          const modalWindow = document.querySelector('#ModalWindow')
+          if (modalWindow) {
+            modalWindow.classList.toggle('U_Hide') // Добавляем или убираем класс для отображения модального окна
+          }
+        })
+      })
+      document.addEventListener('click', function (e) {
+        if (e.target.src != undefined) {
+          document.querySelector('.modalPic').src = e.target.src
+        } else {
+          const modalWindow = document.querySelector('#ModalWindow')
+          modalWindow.classList.add('U_Hide') // Добавляем или убираем класс для отображения модального окна
+        }
+      })
+    })
+  </script>
 </html>

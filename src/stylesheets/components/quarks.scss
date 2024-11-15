@@ -84,7 +84,7 @@
 
   .Q_Cover {
     width: 100%;
-    height: 200px;
+    height: 505px;
     object-fit: cover;
   }
 
@@ -110,5 +110,26 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+  }
+
+  .Q_CaseHeaderLeadLinkArrow {
+    font-size: 15px;
+    line-height: 120%; /* 36px */
+  }
+
+  .Q_BtnArrow {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 82%; /* 80px */
+    letter-spacing: -0.059vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+
+  .Q_Smile {
+    width: 14px;
+    height: 34px;
   }
 }

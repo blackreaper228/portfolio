@@ -6,11 +6,9 @@ html,
 body {
   height: 100%;
   background-color: #090909;
-}
-
-body {
   font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
   font-weight: 400;
+  position: static;
 }
 
 .images {
@@ -37,7 +35,33 @@ body {
   }
 }
 
-
 img {
   display: block;
-  }
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* затемнение фона */
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(12px);
+}
+
+.modalPic {
+  z-index: 2;
+  position: fixed;
+  width: 58.594vw;
+  left: calc(50% - 29.297vw);
+  top: 7.813vw;
+}
+
+.U_Hide {
+  display: none;
+}
+
+.ZoomPic {
+  cursor: zoom-in;
+}

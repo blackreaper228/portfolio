@@ -117,6 +117,7 @@
   padding-left: 0.195vw;
   justify-content: space-between;
 }
+
 @media only screen and (max-device-width: 462px) {
   .W_ConnectorV304 {
     display: none;
@@ -136,7 +137,44 @@
     gap: 24px;
   }
 
+  .W_ConnectorV40 {
+    gap: 24px;
+  }
+
   .W_ConnectorV65 {
     gap: 16px;
+  }
+
+  .W_ConnectorV200 {
+    gap: 56px;
+    padding: 0;
+  }
+
+  .W_BtnArrow {
+    gap: 8px;
+  }
+
+  .W_CaseHeaderDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .W_CaseHeaderDescriptionText {
+    gap: 36px;
+  }
+
+  .W_Tags {
+    gap: 10px;
+  }
+
+  .W_ConnectorV168 {
+    padding: 0px;
+    gap: 76px;
+  }
+
+  .W_Footer {
+    padding-left: 0;
+    justify-content: space-between;
   }
 }

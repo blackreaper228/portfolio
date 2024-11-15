@@ -24,6 +24,11 @@ const BlurredImage = ({ imageUrl, blurhash, className }) => {
     }
   }, [imageUrl])
 
+  const handleClick = () => {
+    document.querySelector('#ModalWindow').classList.toggle('U_Hide') // Или вызовите Element('#ModalWindow') здесь, если это функция
+    document.querySelector('.ZoomPic').style.cursor = 'zoom-out'
+  }
+
   const renderImage = () => {
     if (imageError) {
       return <div>Error loading image</div>
@@ -51,7 +56,11 @@ const BlurredImage = ({ imageUrl, blurhash, className }) => {
     return <div>Loading...</div>
   }
 
-  return <div class="broo">{renderImage()}</div>
+  return (
+    <div className="ZoomPic" onClick={handleClick}>
+      {renderImage()}
+    </div>
+  )
 }
 
 export default BlurredImage

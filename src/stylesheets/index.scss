@@ -6,10 +6,7 @@ body.index {
   padding: 1.875vw 2.891vw 2.656vw 2.813vw;
   gap: 7.813vw;
 
-  & > div,
-  & > a {
-    // margin: 10px 0;
-  }
+  position: static;
 }
 
 ::-webkit-scrollbar {
@@ -92,5 +89,16 @@ p {
     font-size: 44px;
     line-height: 114%; /* 50.16px */
     letter-spacing: -0.836px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  p {
+    letter-spacing: -0.342px;
+    font-size: 18px;
+    line-height: 150%;
   }
 }

@@ -23,4 +23,15 @@
   .O_HeadScreen {
     height: 60vh;
   }
+
+  .O_CaseHeader {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .O_Case {
+    gap: 52px;
+  }
 }
