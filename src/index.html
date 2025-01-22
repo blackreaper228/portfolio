@@ -15,6 +15,21 @@
 
   <body class="index">
     <div class="modal U_Hide" id="ModalWindow">
+      <svg
+        class="closeCross"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M18.1133 16L32 2.11331L29.8867 1.18759e-06L16 13.8867L2.11331 0L1.30635e-06 2.11331L13.8867 16L0 29.8867L2.11331 32L16 18.1133L29.8867 32L32 29.8867L18.1133 16Z"
+          fill="white"
+        />
+      </svg>
       <img class="ZoomPic modalPic" src="./images/img-1.jpg" alt="" /><img />
     </div>
     <div class="W_ConnectorV304">
@@ -362,6 +377,14 @@
         if (e.target.src != undefined) {
           document.querySelector('.modalPic').src = e.target.src
         } else {
+          const modalWindow = document.querySelector('#ModalWindow')
+          modalWindow.classList.add('U_Hide') // Добавляем или убираем класс для отображения модального окна
+        }
+      })
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          e.preventDefault() // Предотвращает остановку загрузки при нажатии ESC
           const modalWindow = document.querySelector('#ModalWindow')
           modalWindow.classList.add('U_Hide') // Добавляем или убираем класс для отображения модального окна
         }

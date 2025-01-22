@@ -48,6 +48,7 @@ img {
   top: 0;
   left: 0;
   backdrop-filter: blur(12px);
+  cursor: pointer;
 }
 
 .modalPic {
@@ -55,9 +56,8 @@ img {
   position: fixed;
   width: 58.594vw;
   left: calc(50% - 29.297vw);
-  top: 7.813vw;
-  // top: 50%;
-  // transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .U_Hide {
@@ -66,4 +66,14 @@ img {
 
 .ZoomPic {
   cursor: zoom-in;
+}
+
+.closeCross {
+  position: absolute;
+  right: 62px;
+  top: 52px;
+}
+
+.closeCross:hover {
+  opacity: 50%;
 }

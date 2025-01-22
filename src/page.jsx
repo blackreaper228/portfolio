@@ -4,11 +4,11 @@ import { createRoot } from 'react-dom/client'
 import BlurredImage from './components/BlurredImage.jsx'
 import imageData from './javascript/images.js'
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    e.preventDefault() // Предотвращает остановку загрузки
-  }
-})
+// document.addEventListener('keydown', (e) => {
+//   if (e.key === 'Escape') {
+//     e.preventDefault() // Предотвращает остановку загрузки при нажатии ESC
+//   }
+// })
 
 // page.jsx
 
@@ -115,46 +115,6 @@ function renderImagesIfScreenWidthMatches(e) {
 
 renderImagesIfScreenWidthMatches(mediaQuery)
 mediaQuery.addListener(renderImagesIfScreenWidthMatches)
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   renderImage('00', imageData[0])
-//   renderImage('1', imageData[2])
-//   renderImage('2', imageData[3])
-//   renderImage('3', imageData[4])
-//   renderImage('4', imageData[5])
-//   renderImage('5', imageData[6])
-//   renderImage('6', imageData[7])
-//   renderImage('7', imageData[8])
-//   renderImage('8', imageData[9])
-//   renderImage('9', imageData[10])
-//   renderImage('10', imageData[11])
-//   renderImage('11', imageData[12])
-//   renderImage('12', imageData[13])
-//   renderImage('13', imageData[14])
-//   renderImage('14', imageData[15])
-//   renderImage('15', imageData[16])
-//   renderImage('16', imageData[17])
-//   renderImage('17', imageData[18])
-//   renderImage('18', imageData[19])
-//   renderImage('19', imageData[20])
-//   renderImage('20', imageData[21])
-//   renderImage('21', imageData[22])
-//   renderImage('22', imageData[23])
-//   renderImage('23', imageData[24])
-//   renderImage('24', imageData[25])
-//   renderImage('25', imageData[26])
-//   renderImage('26', imageData[27])
-//   renderImage('27', imageData[28])
-//   renderImage('28', imageData[29])
-//   renderImage('29', imageData[30])
-//   renderImage('30', imageData[31])
-//   renderImage('31', imageData[32])
-//   renderImage('32', imageData[33])
-//   renderImage('gif1', imageData[34])
-//   renderImage('gif2', imageData[35])
-//   renderImage('gif3', imageData[36])
-//   renderImage('gif4', imageData[37])
-// })
 
 //index.js
 
