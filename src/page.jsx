@@ -4,12 +4,6 @@ import { createRoot } from 'react-dom/client'
 import BlurredImage from './components/BlurredImage.jsx'
 import imageData from './javascript/images.js'
 
-// document.addEventListener('keydown', (e) => {
-//   if (e.key === 'Escape') {
-//     e.preventDefault() // Предотвращает остановку загрузки при нажатии ESC
-//   }
-// })
-
 // page.jsx
 
 const renderImage = (containerId, imageProps) => {
