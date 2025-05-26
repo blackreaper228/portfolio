@@ -138,6 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
+  document.getElementById('nav_unimate').addEventListener('click', function () {
+    const Unimate = document.getElementById('Unimate')
+    const elementPosition = Unimate.getBoundingClientRect().top + window.scrollY
+    const offset = window.innerWidth * 0.02773 // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    })
+  })
+
   document.getElementById('nav_adc').addEventListener('click', function () {
     const ADC = document.getElementById('ADC')
     const elementPosition = ADC.getBoundingClientRect().top + window.scrollY
@@ -194,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   window.addEventListener('scroll', function () {
+    const unimate = document.getElementById('Unimate')
     const adc = document.getElementById('ADC')
     const pog = document.getElementById('pog')
     const chat = document.getElementById('chat')
@@ -201,17 +213,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const nice = document.getElementById('nice')
 
     const nav_adc = document.getElementById('nav_adc')
+    const nav_unimate = document.getElementById('nav_unimate')
     const nav_pog = document.getElementById('nav_pog')
     const nav_chat = document.getElementById('nav_chat')
     const nav_jinx = document.getElementById('nav_jinx')
     const nav_nice = document.getElementById('nav_nice')
 
     // Получаем позиции элемента ADC относительно окна просмотра
+    const unimateRect = unimate.getBoundingClientRect()
     const adcRect = adc.getBoundingClientRect()
     const pogRect = pog.getBoundingClientRect()
     const chatRect = chat.getBoundingClientRect()
     const jinxRect = jinx.getBoundingClientRect()
     const niceRect = nice.getBoundingClientRect()
+
+    // Проверяем, виден ли элемент ADC в пределах видимости
+    if (unimateRect.top < window.innerHeight && unimateRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_unimate.classList.add('highlight')
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_unimate.classList.remove('highlight')
+    }
 
     // Проверяем, виден ли элемент ADC в пределах видимости
     if (adcRect.top < window.innerHeight && adcRect.bottom > 0) {
