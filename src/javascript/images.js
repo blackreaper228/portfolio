@@ -32,11 +32,22 @@ import img29 from '../images/main/img-29.jpg'
 import img30 from '../images/main/img-30.jpg'
 import img31 from '../images/main/img-31.jpg'
 import img32 from '../images/main/img-32.jpg'
+
+import img33 from '../images/main/img-33.jpg'
+import img34 from '../images/main/img-34.jpg'
+import img35 from '../images/main/img-35.jpg'
+import img36 from '../images/main/img-36.jpg'
+import img37 from '../images/main/img-37.jpg'
+import img38 from '../images/main/img-38.jpg'
+
 import gif0 from '../images/main/gif-0.gif'
 import gif1 from '../images/main/gif-01.gif'
 import gif2 from '../images/main/gif-02.gif'
 import gif3 from '../images/main/gif-03.gif'
 import gif4 from '../images/main/gif-04.gif'
+
+import gif5 from '../images/main/gif-05.gif'
+
 import img00Mobile from '../images/main/img-00_mobile.jpg'
 import img5Mobile from '../images/main/img-5_mobile.jpg'
 import img9Mobile from '../images/main/img-9_mobile.jpg'
@@ -215,6 +226,37 @@ const imageData = [
     className: 'Q_SmallPic'
   },
   {
+    imageUrl: img33,
+    blurhash: 'LfLgfDxv-#V{IIWYRkt6~jaxN2fi',
+    className: 'Q_SmallPic'
+  },
+  {
+    imageUrl: img34,
+    blurhash: 'L3Iqap-=%|R4$-sGrdM^~0waDgve',
+    className: 'Q_SmallPic'
+  },
+  {
+    imageUrl: img35,
+    blurhash: 'LTJtNPSN_GwIx^rqs$OY^:Set8rr',
+    className: 'Q_SmallPic'
+  },
+    {
+    imageUrl: img36,
+    blurhash: 'LAM@KojN0Dt6~ox-NF4z0Afh-.IW',
+    className: 'Q_SmallPic'
+  },
+
+  {
+    imageUrl: img37,  
+    blurhash: 'LUPso9xs~lWEt6WDj[ocxsWCD;oe',
+    className: 'Q_SmallPic'
+  },
+  {
+    imageUrl: img38,
+    blurhash: 'L6Gub}%jH[NyIDI{~dN1MCEfxtw|',
+    className: 'Q_Cover'
+  },
+  {
     imageUrl: gif1,
     blurhash: 'LXNSIA.iKIr_m]pUXRi~E1wOXOkC',
     className: 'Q_BigPic'
@@ -233,6 +275,11 @@ const imageData = [
     imageUrl: gif4,
     blurhash: 'L14LROay9FNG~qj?D%ay-=fiRjs:',
     className: 'Q_MedPic'
+  },
+  {
+    imageUrl: gif5,
+    blurhash: 'L6S$ozt8~mogV}WDRlWV.3RlIXox',
+    className: 'Q_BigPic'
   },
   {
     imageUrl: img00Mobile,
