@@ -706,7 +706,7 @@ const img_33_namespaceObject = __webpack_require__.p + "images/81e998654272ba764
 ;// CONCATENATED MODULE: ./src/images/main/img-34.jpg
 const img_34_namespaceObject = __webpack_require__.p + "images/66d95f8e0a2e14ac4971.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-35.jpg
-const img_35_namespaceObject = __webpack_require__.p + "images/789d88fe04c61b727651.jpg";
+const img_35_namespaceObject = __webpack_require__.p + "images/4d870339735de26b487a.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-36.jpg
 const img_36_namespaceObject = __webpack_require__.p + "images/2da2e44462f07d08b83c.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-37.jpg
