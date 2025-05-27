@@ -70,6 +70,8 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('gif3', imageData[42])
       renderImage('gif4', imageData[43])
       renderImage('gif5', imageData[44])
+      renderImage('avatar', imageData[51])
+
     })
   } else {
     document.addEventListener('DOMContentLoaded', () => {
@@ -117,6 +119,7 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('gif3', imageData[42])
       renderImage('gif4', imageData[43])
       renderImage('gif5', imageData[44])
+      renderImage('avatar', imageData[51])
     })
   }
 }

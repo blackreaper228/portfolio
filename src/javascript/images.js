@@ -54,6 +54,8 @@ import img9Mobile from '../images/main/img-9_mobile.jpg'
 import img15Mobile from '../images/main/img-15_mobile.jpg'
 import img24Mobile from '../images/main/img-24_mobile.jpg'
 import img38Mobile from '../images/main/img-38_mobile.jpg'
+import avatar from '../images/img-0.jpg'
+
 
 
 const imageData = [
@@ -312,6 +314,11 @@ const imageData = [
     imageUrl: img38Mobile,
     blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
     className: 'Q_Cover'
+  },
+    {
+    imageUrl: avatar,
+    blurhash: 'LLGIo.~q00t7004n-;t7M{ofxufQ',
+    className: 'Q_AvatarPic gifka'
   }
 ]
 

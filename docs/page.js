@@ -737,7 +737,10 @@ const img_15_mobile_namespaceObject = __webpack_require__.p + "images/359ca34925
 const img_24_mobile_namespaceObject = __webpack_require__.p + "images/0243660c509412f3acc0.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-38_mobile.jpg
 const img_38_mobile_namespaceObject = __webpack_require__.p + "images/1a6871cb647b66bbe5c6.jpg";
+;// CONCATENATED MODULE: ./src/images/img-0.jpg
+const images_img_0_namespaceObject = __webpack_require__.p + "images/714f4c55e1f2c7e0d3d1.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/images.js
+
 
 
 
@@ -994,6 +997,10 @@ var imageData = [{
   imageUrl: img_38_mobile_namespaceObject,
   blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
   className: 'Q_Cover'
+}, {
+  imageUrl: images_img_0_namespaceObject,
+  blurhash: 'LLGIo.~q00t7004n-;t7M{ofxufQ',
+  className: 'Q_AvatarPic gifka'
 }];
 /* harmony default export */ const javascript_images = (imageData);
 ;// CONCATENATED MODULE: ./src/page.jsx
@@ -1066,6 +1073,7 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('gif3', javascript_images[42]);
       renderImage('gif4', javascript_images[43]);
       renderImage('gif5', javascript_images[44]);
+      renderImage('avatar', javascript_images[51]);
     });
   } else {
     document.addEventListener('DOMContentLoaded', function () {
@@ -1113,6 +1121,7 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('gif3', javascript_images[42]);
       renderImage('gif4', javascript_images[43]);
       renderImage('gif5', javascript_images[44]);
+      renderImage('avatar', javascript_images[51]);
     });
   }
 }
