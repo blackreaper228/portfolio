@@ -701,6 +701,18 @@ const img_30_namespaceObject = __webpack_require__.p + "images/bb603f47641d26e0f
 const img_31_namespaceObject = __webpack_require__.p + "images/b49d4c4ed5d6a9bc9d62.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-32.jpg
 const img_32_namespaceObject = __webpack_require__.p + "images/93bc694fafc6b0a87d14.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-33.jpg
+const img_33_namespaceObject = __webpack_require__.p + "images/81e998654272ba764a74.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-34.jpg
+const img_34_namespaceObject = __webpack_require__.p + "images/66d95f8e0a2e14ac4971.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-35.jpg
+const img_35_namespaceObject = __webpack_require__.p + "images/789d88fe04c61b727651.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-36.jpg
+const img_36_namespaceObject = __webpack_require__.p + "images/2da2e44462f07d08b83c.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-37.jpg
+const img_37_namespaceObject = __webpack_require__.p + "images/4d6a19a7dee90068cbb4.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-38.jpg
+const img_38_namespaceObject = __webpack_require__.p + "images/0aa79c71898e588bebc4.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/gif-0.gif
 const gif_0_namespaceObject = __webpack_require__.p + "images/c86d74ff7615470abfb7.gif";
 ;// CONCATENATED MODULE: ./src/images/main/gif-01.gif
@@ -711,6 +723,8 @@ const gif_02_namespaceObject = __webpack_require__.p + "images/463d6ed87faa34c79
 const gif_03_namespaceObject = __webpack_require__.p + "images/ee71ac6a9ae71255b392.gif";
 ;// CONCATENATED MODULE: ./src/images/main/gif-04.gif
 const gif_04_namespaceObject = __webpack_require__.p + "images/d9d04ac865615ba017bb.gif";
+;// CONCATENATED MODULE: ./src/images/main/gif-05.gif
+const gif_05_namespaceObject = __webpack_require__.p + "images/6ba54273ab1472494fc9.gif";
 ;// CONCATENATED MODULE: ./src/images/main/img-00_mobile.jpg
 const img_00_mobile_namespaceObject = __webpack_require__.p + "images/57331ab22572653607ce.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-5_mobile.jpg
@@ -721,7 +735,17 @@ const img_9_mobile_namespaceObject = __webpack_require__.p + "images/6ccf982bb7f
 const img_15_mobile_namespaceObject = __webpack_require__.p + "images/359ca349255ff19e2577.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-24_mobile.jpg
 const img_24_mobile_namespaceObject = __webpack_require__.p + "images/0243660c509412f3acc0.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-38_mobile.jpg
+const img_38_mobile_namespaceObject = __webpack_require__.p + "images/1a6871cb647b66bbe5c6.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/images.js
+
+
+
+
+
+
+
+
 
 
 
@@ -903,6 +927,30 @@ var imageData = [{
   blurhash: 'L354:2:r043|yTRRMN%d0~Fs^4{-',
   className: 'Q_SmallPic'
 }, {
+  imageUrl: img_33_namespaceObject,
+  blurhash: 'LfLgfDxv-#V{IIWYRkt6~jaxN2fi',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_34_namespaceObject,
+  blurhash: 'L3Iqap-=%|R4$-sGrdM^~0waDgve',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_35_namespaceObject,
+  blurhash: 'LTJtNPSN_GwIx^rqs$OY^:Set8rr',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_36_namespaceObject,
+  blurhash: 'LAM@KojN0Dt6~ox-NF4z0Afh-.IW',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_37_namespaceObject,
+  blurhash: 'LUPso9xs~lWEt6WDj[ocxsWCD;oe',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_38_namespaceObject,
+  blurhash: 'L6Gub}%jH[NyIDI{~dN1MCEfxtw|',
+  className: 'Q_Cover'
+}, {
   imageUrl: gif_01_namespaceObject,
   blurhash: 'LXNSIA.iKIr_m]pUXRi~E1wOXOkC',
   className: 'Q_BigPic'
@@ -918,6 +966,10 @@ var imageData = [{
   imageUrl: gif_04_namespaceObject,
   blurhash: 'L14LROay9FNG~qj?D%ay-=fiRjs:',
   className: 'Q_MedPic'
+}, {
+  imageUrl: gif_05_namespaceObject,
+  blurhash: 'L6S$ozt8~mogV}WDRlWV.3RlIXox',
+  className: 'Q_BigPic'
 }, {
   imageUrl: img_00_mobile_namespaceObject,
   blurhash: 'LO9+K1xbqDs=Vt*IxbyWRRV@%3nS',
@@ -937,6 +989,10 @@ var imageData = [{
 }, {
   imageUrl: img_24_mobile_namespaceObject,
   blurhash: 'LMF}}--x*5Q=%Nx9IwRhx{TlV[tR',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_38_mobile_namespaceObject,
+  blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
   className: 'Q_Cover'
 }];
 /* harmony default export */ const javascript_images = (imageData);
@@ -999,34 +1055,41 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('30', javascript_images[31]);
       renderImage('31', javascript_images[32]);
       renderImage('32', javascript_images[33]);
-      renderImage('gif1', javascript_images[34]);
-      renderImage('gif2', javascript_images[35]);
-      renderImage('gif3', javascript_images[36]);
-      renderImage('gif4', javascript_images[37]);
+      renderImage('33', javascript_images[34]);
+      renderImage('34', javascript_images[35]);
+      renderImage('35', javascript_images[36]);
+      renderImage('36', javascript_images[37]);
+      renderImage('37', javascript_images[38]);
+      renderImage('38', javascript_images[39]);
+      renderImage('gif1', javascript_images[40]);
+      renderImage('gif2', javascript_images[41]);
+      renderImage('gif3', javascript_images[42]);
+      renderImage('gif4', javascript_images[43]);
+      renderImage('gif5', javascript_images[44]);
     });
   } else {
     document.addEventListener('DOMContentLoaded', function () {
-      renderImage('00', javascript_images[38]);
+      renderImage('00', javascript_images[45]);
       renderImage('1', javascript_images[2]);
       renderImage('2', javascript_images[3]);
       renderImage('3', javascript_images[4]);
       renderImage('4', javascript_images[5]);
-      renderImage('5', javascript_images[39]);
+      renderImage('5', javascript_images[46]);
       renderImage('6', javascript_images[7]);
       renderImage('7', javascript_images[8]);
       renderImage('8', javascript_images[9]);
-      renderImage('9', javascript_images[40]);
+      renderImage('9', javascript_images[47]);
       renderImage('10', javascript_images[11]);
       renderImage('11', javascript_images[12]);
       renderImage('12', javascript_images[13]);
       renderImage('13', javascript_images[14]);
       renderImage('14', javascript_images[15]);
-      renderImage('15', javascript_images[41]);
+      renderImage('15', javascript_images[48]);
       renderImage('16', javascript_images[17]);
       renderImage('17', javascript_images[18]);
       renderImage('18', javascript_images[19]);
       renderImage('19', javascript_images[20]);
-      renderImage('20', javascript_images[21]);
+      renderImage('20', javascript_images[49]);
       renderImage('21', javascript_images[22]);
       renderImage('22', javascript_images[23]);
       renderImage('23', javascript_images[24]);
@@ -1039,10 +1102,17 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('30', javascript_images[31]);
       renderImage('31', javascript_images[32]);
       renderImage('32', javascript_images[33]);
-      renderImage('gif1', javascript_images[34]);
-      renderImage('gif2', javascript_images[35]);
-      renderImage('gif3', javascript_images[36]);
-      renderImage('gif4', javascript_images[37]);
+      renderImage('33', javascript_images[34]);
+      renderImage('34', javascript_images[35]);
+      renderImage('35', javascript_images[36]);
+      renderImage('36', javascript_images[37]);
+      renderImage('37', javascript_images[38]);
+      renderImage('38', javascript_images[50]);
+      renderImage('gif1', javascript_images[40]);
+      renderImage('gif2', javascript_images[41]);
+      renderImage('gif3', javascript_images[42]);
+      renderImage('gif4', javascript_images[43]);
+      renderImage('gif5', javascript_images[44]);
     });
   }
 }
@@ -1058,6 +1128,16 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nav_kolya').addEventListener('click', function () {
     window.scrollTo({
       top: 0,
+      behavior: 'smooth'
+    });
+  });
+  document.getElementById('nav_unimate').addEventListener('click', function () {
+    var Unimate = document.getElementById('Unimate');
+    var elementPosition = Unimate.getBoundingClientRect().top + window.scrollY;
+    var offset = window.innerWidth * 0.02773; // vw
+
+    window.scrollTo({
+      top: elementPosition - offset,
       behavior: 'smooth'
     });
   });
@@ -1112,22 +1192,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   window.addEventListener('scroll', function () {
+    var unimate = document.getElementById('Unimate');
     var adc = document.getElementById('ADC');
     var pog = document.getElementById('pog');
     var chat = document.getElementById('chat');
     var jinx = document.getElementById('jinx');
     var nice = document.getElementById('nice');
     var nav_adc = document.getElementById('nav_adc');
+    var nav_unimate = document.getElementById('nav_unimate');
     var nav_pog = document.getElementById('nav_pog');
     var nav_chat = document.getElementById('nav_chat');
     var nav_jinx = document.getElementById('nav_jinx');
     var nav_nice = document.getElementById('nav_nice'); // Получаем позиции элемента ADC относительно окна просмотра
 
+    var unimateRect = unimate.getBoundingClientRect();
     var adcRect = adc.getBoundingClientRect();
     var pogRect = pog.getBoundingClientRect();
     var chatRect = chat.getBoundingClientRect();
     var jinxRect = jinx.getBoundingClientRect();
     var niceRect = nice.getBoundingClientRect(); // Проверяем, виден ли элемент ADC в пределах видимости
+
+    if (unimateRect.top < window.innerHeight && unimateRect.bottom > 0) {
+      // Меняем цвет текста на белый
+      nav_unimate.classList.add('highlight');
+    } else {
+      // Восстанавливаем цвет текста на черный, если элемент не виден
+      nav_unimate.classList.remove('highlight');
+    } // Проверяем, виден ли элемент ADC в пределах видимости
+
 
     if (adcRect.top < window.innerHeight && adcRect.bottom > 0) {
       // Меняем цвет текста на белый

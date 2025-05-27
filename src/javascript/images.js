@@ -53,6 +53,8 @@ import img5Mobile from '../images/main/img-5_mobile.jpg'
 import img9Mobile from '../images/main/img-9_mobile.jpg'
 import img15Mobile from '../images/main/img-15_mobile.jpg'
 import img24Mobile from '../images/main/img-24_mobile.jpg'
+import img38Mobile from '../images/main/img-38_mobile.jpg'
+
 
 const imageData = [
   {
@@ -304,6 +306,11 @@ const imageData = [
   {
     imageUrl: img24Mobile,
     blurhash: 'LMF}}--x*5Q=%Nx9IwRhx{TlV[tR',
+    className: 'Q_Cover'
+  },
+  {
+    imageUrl: img38Mobile,
+    blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
     className: 'Q_Cover'
   }
 ]
