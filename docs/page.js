@@ -1242,9 +1242,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Восстанавливаем цвет текста на черный, если элемент не виден
       nav_nice.classList.remove('highlight');
     }
-  }); // const image = new Image()
-  // image.src = jpg
-  // document.querySelector('.images').appendChild(image)
+  });
 });
 })();
 
