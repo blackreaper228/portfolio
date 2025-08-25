@@ -32,13 +32,19 @@ import img29 from '../images/main/img-29.jpg'
 import img30 from '../images/main/img-30.jpg'
 import img31 from '../images/main/img-31.jpg'
 import img32 from '../images/main/img-32.jpg'
-
 import img33 from '../images/main/img-33.jpg'
 import img34 from '../images/main/img-34.jpg'
 import img35 from '../images/main/img-35.jpg'
 import img36 from '../images/main/img-36.jpg'
 import img37 from '../images/main/img-37.jpg'
 import img38 from '../images/main/img-38.jpg'
+import img39 from '../images/main/img-39.jpg'
+import img40 from '../images/main/img-40.jpg'
+import img41 from '../images/main/img-41.jpg'
+import img42 from '../images/main/img-42.jpg'
+import img43 from '../images/main/img-43.jpg'
+import img44 from '../images/main/img-44.jpg'
+import img45 from '../images/main/img-45.jpg'
 
 import gif0 from '../images/main/gif-0.gif'
 import gif1 from '../images/main/gif-01.gif'
@@ -54,9 +60,8 @@ import img9Mobile from '../images/main/img-9_mobile.jpg'
 import img15Mobile from '../images/main/img-15_mobile.jpg'
 import img24Mobile from '../images/main/img-24_mobile.jpg'
 import img38Mobile from '../images/main/img-38_mobile.jpg'
+import img39Mobile from '../images/main/img-39_mobile.jpg'
 import avatar from '../images/img-0.jpg'
-
-
 
 const imageData = [
   {
@@ -244,14 +249,14 @@ const imageData = [
     blurhash: 'LTJtNPSN_GwIx^rqs$OY^:Set8rr',
     className: 'Q_SmallPic'
   },
-    {
+  {
     imageUrl: img36,
     blurhash: 'LAM@KojN0Dt6~ox-NF4z0Afh-.IW',
     className: 'Q_SmallPic'
   },
 
   {
-    imageUrl: img37,  
+    imageUrl: img37,
     blurhash: 'LUPso9xs~lWEt6WDj[ocxsWCD;oe',
     className: 'Q_SmallPic'
   },
@@ -260,6 +265,46 @@ const imageData = [
     blurhash: 'L6Gub}%jH[NyIDI{~dN1MCEfxtw|',
     className: 'Q_Cover'
   },
+  {
+    imageUrl: img39,
+    blurhash: 'L7O1DIQvzVI@H]N2aS^H~nxDQoOq',
+    className: 'Q_Cover'
+  },
+  {
+    imageUrl: img40,
+    blurhash: 'L6F4PsO,03Z;2sr[}mru075D-m%Y',
+    className: 'Q_SmallPic'
+  },
+
+  {
+    imageUrl: img41,
+    blurhash: 'L7MqIVEexuxW}TF1=c$jX9F{5=+a',
+    className: 'Q_SmallPic'
+  },
+
+  {
+    imageUrl: img42,
+    blurhash: 'LROd87hV+wJV|HS{KNxV+dxptfs,',
+    className: 'Q_SmallPic'
+  },
+
+  {
+    imageUrl: img43,
+    blurhash: 'LlR01wHQX6#TtQbtn~oI-7tMWDM~',
+    className: 'Q_SmallPic'
+  },
+
+  {
+    imageUrl: img44,
+    blurhash: 'LVM#gXoe~3WVt5V_R-bY^uayS5oe',
+    className: 'Q_SmallPic'
+  },
+  {
+    imageUrl: img45,
+    blurhash: 'LjHAh0W=9vV[~9oKIqazJ8oJazkB',
+    className: 'Q_BigPic'
+  },
+
   {
     imageUrl: gif1,
     blurhash: 'LXNSIA.iKIr_m]pUXRi~E1wOXOkC',
@@ -285,6 +330,7 @@ const imageData = [
     blurhash: 'L6S$ozt8~mogV}WDRlWV.3RlIXox',
     className: 'Q_BigPic'
   },
+
   {
     imageUrl: img00Mobile,
     blurhash: 'LO9+K1xbqDs=Vt*IxbyWRRV@%3nS',
@@ -315,7 +361,13 @@ const imageData = [
     blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
     className: 'Q_Cover'
   },
-    {
+  {
+    imageUrl: img39Mobile,
+    blurhash: 'L6NaqfO]ukQ8U|rrOGNeZM4WPC~C',
+    className: 'Q_Cover'
+  },
+
+  {
     imageUrl: avatar,
     blurhash: 'LLGIo.~q00t7004n-;t7M{ofxufQ',
     className: 'Q_AvatarPic gifka'

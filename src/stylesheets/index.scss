@@ -49,6 +49,8 @@ h2 {
   font-weight: 500;
   line-height: 100%; /* 116px */
   letter-spacing: -0.086vw;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
 }
 
 h3 {
@@ -61,7 +63,7 @@ h3 {
   font-weight: 500;
   line-height: 100%; /* 80px */
   letter-spacing: -0.059vw;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 p {
@@ -100,5 +102,104 @@ p {
     letter-spacing: -0.342px;
     font-size: 18px;
     line-height: 150%;
+  }
+}
+
+.top_title_scroll_down {
+  position: absolute;
+  right: 2.891vw;
+  top: 43.5vw;
+  cursor: pointer;
+
+  p {
+    transform: rotate(-6.45deg);
+    font-size: 1.641vw;
+  }
+
+  // Класс для программной анимации каждые 15 секунд
+  &.tilting-active {
+    animation: tilting-sharp 0.8s steps(2, end);
+  }
+}
+
+@keyframes tilting-sharp {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-12deg);
+  }
+}
+
+.arrow_down_top {
+  position: absolute;
+  top: -0.195vw;
+  left: -2.539vw;
+  width: 3.281vw;
+  height: 3.633vw;
+
+  background-image: url('./images/arrow_down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav_hover {
+  position: relative;
+  &:hover {
+    color: #000 !important;
+    transition: none;
+    font-weight: 700;
+    &::after {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-40%, -50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200%;
+    height: 100px;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+    display: none;
+  }
+
+  &.red {
+    &::after {
+      background-image: url('./images/hover_red.gif');
+    }
+  }
+  &.purple {
+    &::after {
+      background-image: url('./images/hover_purple.gif');
+    }
+  }
+  &.light-green {
+    &::after {
+      background-image: url('./images/hover_light-green.gif');
+    }
+  }
+  &.pink {
+    &::after {
+      background-image: url('./images/hover_pink.gif');
+    }
+  }
+  &.green {
+    &::after {
+      background-image: url('./images/hover_green.gif');
+    }
+  }
+  &.yellow {
+    &::after {
+      background-image: url('./images/hover_yellow.gif');
+    }
   }
 }

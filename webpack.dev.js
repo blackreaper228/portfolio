@@ -8,7 +8,10 @@ module.exports = merge(common, {
   watch: true,
   devServer: {
     static: './dev_build',
-    open: true
+    open: true,
+    hot: true,
+    liveReload: true,
+    watchFiles: ['src/**/*']
   },
   output: {
     path: path.resolve(__dirname, 'dev_build')

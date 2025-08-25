@@ -38,14 +38,14 @@
 .A_NavText {
   color: var(--white);
   font-family: 'Inter', sans-serif;
-  font-size: 1.25vw;
+  font-size: 0.938vw;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 100%; /* 32px */
   cursor: pointer;
 
   text-decoration: none;
-  transition: color 0.3s ease;
+  // transition: color 0.3s ease;
 }
 
 .A_NavText.nav {
