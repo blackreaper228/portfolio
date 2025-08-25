@@ -686,6 +686,20 @@ const img_36_namespaceObject = __webpack_require__.p + "images/2da2e44462f07d08b
 const img_37_namespaceObject = __webpack_require__.p + "images/4d6a19a7dee90068cbb4.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-38.jpg
 const img_38_namespaceObject = __webpack_require__.p + "images/0aa79c71898e588bebc4.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-39.jpg
+const img_39_namespaceObject = __webpack_require__.p + "images/ab7725ef6de818ec6c46.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-40.jpg
+const img_40_namespaceObject = __webpack_require__.p + "images/5af84b932c71f53c8e14.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-41.jpg
+const img_41_namespaceObject = __webpack_require__.p + "images/be04d15156a7363a832e.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-42.jpg
+const img_42_namespaceObject = __webpack_require__.p + "images/dbf300a94ccfa01accac.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-43.jpg
+const img_43_namespaceObject = __webpack_require__.p + "images/f0e978f15b6bcaf30a3c.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-44.jpg
+const img_44_namespaceObject = __webpack_require__.p + "images/29df54d01950fb1a5145.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-45.jpg
+const img_45_namespaceObject = __webpack_require__.p + "images/f08ccb881564d9ee4711.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/gif-0.gif
 const gif_0_namespaceObject = __webpack_require__.p + "images/c86d74ff7615470abfb7.gif";
 ;// CONCATENATED MODULE: ./src/images/main/gif-01.gif
@@ -710,9 +724,19 @@ const img_15_mobile_namespaceObject = __webpack_require__.p + "images/359ca34925
 const img_24_mobile_namespaceObject = __webpack_require__.p + "images/0243660c509412f3acc0.jpg";
 ;// CONCATENATED MODULE: ./src/images/main/img-38_mobile.jpg
 const img_38_mobile_namespaceObject = __webpack_require__.p + "images/1a6871cb647b66bbe5c6.jpg";
+;// CONCATENATED MODULE: ./src/images/main/img-39_mobile.jpg
+const img_39_mobile_namespaceObject = __webpack_require__.p + "images/3f24bacf864262c9438d.jpg";
 ;// CONCATENATED MODULE: ./src/images/img-0.jpg
 const images_img_0_namespaceObject = __webpack_require__.p + "images/714f4c55e1f2c7e0d3d1.jpg";
 ;// CONCATENATED MODULE: ./src/javascript/images.js
+
+
+
+
+
+
+
+
 
 
 
@@ -927,6 +951,34 @@ var imageData = [{
   blurhash: 'L6Gub}%jH[NyIDI{~dN1MCEfxtw|',
   className: 'Q_Cover'
 }, {
+  imageUrl: img_39_namespaceObject,
+  blurhash: 'L7O1DIQvzVI@H]N2aS^H~nxDQoOq',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_40_namespaceObject,
+  blurhash: 'L6F4PsO,03Z;2sr[}mru075D-m%Y',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_41_namespaceObject,
+  blurhash: 'L7MqIVEexuxW}TF1=c$jX9F{5=+a',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_42_namespaceObject,
+  blurhash: 'LROd87hV+wJV|HS{KNxV+dxptfs,',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_43_namespaceObject,
+  blurhash: 'LlR01wHQX6#TtQbtn~oI-7tMWDM~',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_44_namespaceObject,
+  blurhash: 'LVM#gXoe~3WVt5V_R-bY^uayS5oe',
+  className: 'Q_SmallPic'
+}, {
+  imageUrl: img_45_namespaceObject,
+  blurhash: 'LjHAh0W=9vV[~9oKIqazJ8oJazkB',
+  className: 'Q_BigPic'
+}, {
   imageUrl: gif_01_namespaceObject,
   blurhash: 'LXNSIA.iKIr_m]pUXRi~E1wOXOkC',
   className: 'Q_BigPic'
@@ -969,6 +1021,10 @@ var imageData = [{
 }, {
   imageUrl: img_38_mobile_namespaceObject,
   blurhash: 'L7GbTrR@rtbq8~S*-ht0~KEARjxo',
+  className: 'Q_Cover'
+}, {
+  imageUrl: img_39_mobile_namespaceObject,
+  blurhash: 'L6NaqfO]ukQ8U|rrOGNeZM4WPC~C',
   className: 'Q_Cover'
 }, {
   imageUrl: images_img_0_namespaceObject,
@@ -1041,40 +1097,47 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('36', javascript_images[37]);
       renderImage('37', javascript_images[38]);
       renderImage('38', javascript_images[39]);
-      renderImage('gif1', javascript_images[40]);
-      renderImage('gif2', javascript_images[41]);
-      renderImage('gif3', javascript_images[42]);
-      renderImage('gif4', javascript_images[43]);
-      renderImage('gif5', javascript_images[44]);
-      renderImage('avatar', javascript_images[51]);
+      renderImage('39', javascript_images[40]);
+      renderImage('40', javascript_images[41]);
+      renderImage('41', javascript_images[42]);
+      renderImage('42', javascript_images[43]);
+      renderImage('43', javascript_images[44]);
+      renderImage('44', javascript_images[45]);
+      renderImage('45', javascript_images[46]);
+      renderImage('gif1', javascript_images[47]);
+      renderImage('gif2', javascript_images[48]);
+      renderImage('gif3', javascript_images[49]);
+      renderImage('gif4', javascript_images[50]);
+      renderImage('gif5', javascript_images[51]);
+      renderImage('avatar', javascript_images[1]);
     });
   } else {
     document.addEventListener('DOMContentLoaded', function () {
-      renderImage('00', javascript_images[45]);
+      renderImage('00', javascript_images[52]);
       renderImage('1', javascript_images[2]);
       renderImage('2', javascript_images[3]);
       renderImage('3', javascript_images[4]);
       renderImage('4', javascript_images[5]);
-      renderImage('5', javascript_images[46]);
+      renderImage('5', javascript_images[53]);
       renderImage('6', javascript_images[7]);
       renderImage('7', javascript_images[8]);
       renderImage('8', javascript_images[9]);
-      renderImage('9', javascript_images[47]);
+      renderImage('9', javascript_images[54]);
       renderImage('10', javascript_images[11]);
       renderImage('11', javascript_images[12]);
       renderImage('12', javascript_images[13]);
       renderImage('13', javascript_images[14]);
       renderImage('14', javascript_images[15]);
-      renderImage('15', javascript_images[48]);
+      renderImage('15', javascript_images[55]);
       renderImage('16', javascript_images[17]);
       renderImage('17', javascript_images[18]);
       renderImage('18', javascript_images[19]);
       renderImage('19', javascript_images[20]);
-      renderImage('20', javascript_images[49]);
+      renderImage('20', javascript_images[56]);
       renderImage('21', javascript_images[22]);
       renderImage('22', javascript_images[23]);
       renderImage('23', javascript_images[24]);
-      renderImage('24', javascript_images[42]);
+      renderImage('24', javascript_images[25]);
       renderImage('25', javascript_images[26]);
       renderImage('26', javascript_images[27]);
       renderImage('27', javascript_images[28]);
@@ -1088,13 +1151,20 @@ function renderImagesIfScreenWidthMatches(e) {
       renderImage('35', javascript_images[36]);
       renderImage('36', javascript_images[37]);
       renderImage('37', javascript_images[38]);
-      renderImage('38', javascript_images[50]);
-      renderImage('gif1', javascript_images[40]);
-      renderImage('gif2', javascript_images[41]);
-      renderImage('gif3', javascript_images[42]);
-      renderImage('gif4', javascript_images[43]);
-      renderImage('gif5', javascript_images[44]);
-      renderImage('avatar', javascript_images[51]);
+      renderImage('38', javascript_images[57]);
+      renderImage('39', javascript_images[58]);
+      renderImage('40', javascript_images[41]);
+      renderImage('41', javascript_images[42]);
+      renderImage('42', javascript_images[43]);
+      renderImage('43', javascript_images[44]);
+      renderImage('44', javascript_images[45]);
+      renderImage('45', javascript_images[46]);
+      renderImage('gif1', javascript_images[47]);
+      renderImage('gif2', javascript_images[48]);
+      renderImage('gif3', javascript_images[49]);
+      renderImage('gif4', javascript_images[50]);
+      renderImage('gif5', javascript_images[51]);
+      renderImage('avatar', javascript_images[59]);
     });
   }
 }
@@ -1104,9 +1174,155 @@ mediaQuery.addListener(renderImagesIfScreenWidthMatches); //index.js
 
 function Element(e) {
   document.querySelector(e).classList.remove('U_Hide');
+} // Функция для анимации элемента .top_title_scroll_down
+
+
+function setupScrollDownAnimation() {
+  var scrollDownElement = document.querySelector('.top_title_scroll_down');
+
+  if (scrollDownElement) {
+    // Функция для запуска анимации
+    var triggerAnimation = function triggerAnimation() {
+      scrollDownElement.style.animation = 'tilting-sharp 0.8s steps(2, end) 2'; // Сбрасываем анимацию после завершения
+
+      setTimeout(function () {
+        scrollDownElement.style.animation = '';
+      }, 1600);
+    }; // Запускаем анимацию сразу
+
+
+    triggerAnimation(); // Запускаем каждые 15 секунд
+
+    setInterval(triggerAnimation, 3000); // Добавляем обработчик клика для скролла к h2 "Просто крутые проекты"
+
+    scrollDownElement.addEventListener('click', function () {
+      // Ищем h2 с текстом "Просто крутые проекты"
+      var h2Elements = document.querySelectorAll('h2');
+      var targetElement = null;
+      h2Elements.forEach(function (h2) {
+        if (h2.textContent.includes('Просто крутые проекты')) {
+          targetElement = h2;
+        }
+      });
+
+      if (targetElement) {
+        var elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+} // Функция для прелоадера с отслеживанием загрузки
+
+
+function setupPreloader() {
+  var loadingModal = document.querySelector('.loading_modal');
+  var progressBar = document.querySelector('.loading_progress_bar');
+  var loadedCount = 0;
+  var totalCount = 0; // Функция обновления прогресса
+
+  var updateProgress = function updateProgress() {
+    var percentage = Math.round(loadedCount / totalCount * 100);
+
+    if (progressBar) {
+      // Создаем стиль для псевдоэлемента
+      var styleId = 'progress-bar-style';
+      var style = document.getElementById(styleId);
+
+      if (!style) {
+        style = document.createElement('style');
+        style.id = styleId;
+        document.head.appendChild(style);
+      }
+
+      style.textContent = "\n        .loading_progress_bar::after {\n          width: ".concat(percentage, "% !important;\n        }\n      ");
+    } // Когда всё загружено, скрываем прелоадер
+
+
+    if (loadedCount >= totalCount) {
+      setTimeout(function () {
+        if (loadingModal) {
+          loadingModal.classList.add('hide'); // Полностью удаляем элемент через 500ms после анимации
+
+          setTimeout(function () {
+            loadingModal.style.display = 'none';
+          }, 500);
+        }
+      }, 500); // Небольшая задержка для показа 100%
+    }
+  }; // Получаем все элементы первого экрана для отслеживания
+
+
+  var firstScreenElements = []; // Добавляем background-image элементы
+
+  var bgElements = ['.top_title_bg', '.top_title_bg_avatar', '.top_title_bg_lines', '.top_title_bg_avatar_big', '.loading_anim'];
+  bgElements.forEach(function (selector) {
+    var element = document.querySelector(selector);
+
+    if (element) {
+      var computedStyle = getComputedStyle(element);
+      var bgImage = computedStyle.backgroundImage;
+
+      if (bgImage && bgImage !== 'none') {
+        var url = bgImage.match(/url\(["']?([^"')]*)["']?\)/);
+
+        if (url && url[1]) {
+          firstScreenElements.push({
+            type: 'background',
+            url: url[1],
+            element: element
+          });
+        }
+      }
+    }
+  }); // Добавляем обычные img элементы (если есть)
+
+  var imgElements = document.querySelectorAll('.top_title_wrap img');
+  imgElements.forEach(function (img) {
+    if (img.src) {
+      firstScreenElements.push({
+        type: 'image',
+        url: img.src,
+        element: img
+      });
+    }
+  });
+  totalCount = firstScreenElements.length;
+
+  if (totalCount === 0) {
+    // Если нет элементов для загрузки, сразу скрываем прелоадер
+    updateProgress();
+    return;
+  } // Загружаем каждый элемент
+
+
+  firstScreenElements.forEach(function (item) {
+    var img = new Image();
+
+    img.onload = function () {
+      loadedCount++;
+      updateProgress();
+    };
+
+    img.onerror = function () {
+      loadedCount++; // Считаем ошибки как загруженные, чтобы не блокировать
+
+      updateProgress();
+    };
+
+    img.src = item.url;
+  }); // Устанавливаем начальный прогресс
+
+  updateProgress();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Инициализируем прелоадер
+  setupPreloader(); // Инициализируем анимацию scroll down
+
+  setupScrollDownAnimation();
   document.getElementById('nav_kolya').addEventListener('click', function () {
     window.scrollTo({
       top: 0,
@@ -1143,16 +1359,25 @@ document.addEventListener('DOMContentLoaded', function () {
       behavior: 'smooth'
     });
   });
-  document.getElementById('nav_chat').addEventListener('click', function () {
-    var chat = document.getElementById('chat');
-    var elementPosition = chat.getBoundingClientRect().top + window.scrollY;
+  document.getElementById('nav_schizofiles').addEventListener('click', function () {
+    var pog = document.getElementById('schizofiles');
+    var elementPosition = pog.getBoundingClientRect().top + window.scrollY;
     var offset = window.innerWidth * 0.02773; // vw
 
     window.scrollTo({
       top: elementPosition - offset,
       behavior: 'smooth'
     });
-  });
+  }); // document.getElementById('nav_chat').addEventListener('click', function () {
+  //   const chat = document.getElementById('chat')
+  //   const elementPosition = chat.getBoundingClientRect().top + window.scrollY
+  //   const offset = window.innerWidth * 0.02773 // vw
+  //   window.scrollTo({
+  //     top: elementPosition - offset,
+  //     behavior: 'smooth'
+  //   })
+  // })
+
   document.getElementById('nav_jinx').addEventListener('click', function () {
     var jinx = document.getElementById('jinx');
     var elementPosition = jinx.getBoundingClientRect().top + window.scrollY;
@@ -1176,21 +1401,24 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     var unimate = document.getElementById('Unimate');
     var adc = document.getElementById('ADC');
-    var pog = document.getElementById('pog');
-    var chat = document.getElementById('chat');
+    var pog = document.getElementById('pog'); // const chat = document.getElementById('chat')
+
+    var schizofiles = document.getElementById('schizofiles');
     var jinx = document.getElementById('jinx');
     var nice = document.getElementById('nice');
     var nav_adc = document.getElementById('nav_adc');
     var nav_unimate = document.getElementById('nav_unimate');
-    var nav_pog = document.getElementById('nav_pog');
-    var nav_chat = document.getElementById('nav_chat');
+    var nav_pog = document.getElementById('nav_pog'); // const nav_chat = document.getElementById('nav_chat')
+
+    var nav_schizofiles = document.getElementById('nav_schizofiles');
     var nav_jinx = document.getElementById('nav_jinx');
     var nav_nice = document.getElementById('nav_nice'); // Получаем позиции элемента ADC относительно окна просмотра
 
     var unimateRect = unimate.getBoundingClientRect();
     var adcRect = adc.getBoundingClientRect();
-    var pogRect = pog.getBoundingClientRect();
-    var chatRect = chat.getBoundingClientRect();
+    var pogRect = pog.getBoundingClientRect(); // const chatRect = chat.getBoundingClientRect()
+
+    var schizofilesRect = schizofiles.getBoundingClientRect();
     var jinxRect = jinx.getBoundingClientRect();
     var niceRect = nice.getBoundingClientRect(); // Проверяем, виден ли элемент ADC в пределах видимости
 
@@ -1219,13 +1447,20 @@ document.addEventListener('DOMContentLoaded', function () {
       nav_pog.classList.remove('highlight');
     }
 
-    if (chatRect.top < window.innerHeight && chatRect.bottom > 0) {
+    if (schizofilesRect.top < window.innerHeight && schizofilesRect.bottom > 0) {
       // Меняем цвет текста на белый
-      nav_chat.classList.add('highlight');
+      nav_schizofiles.classList.add('highlight');
     } else {
       // Восстанавливаем цвет текста на черный, если элемент не виден
-      nav_chat.classList.remove('highlight');
-    }
+      nav_schizofiles.classList.remove('highlight');
+    } // if (chatRect.top < window.innerHeight && chatRect.bottom > 0) {
+    //   // Меняем цвет текста на белый
+    //   nav_chat.classList.add('highlight')
+    // } else {
+    //   // Восстанавливаем цвет текста на черный, если элемент не виден
+    //   nav_chat.classList.remove('highlight')
+    // }
+
 
     if (jinxRect.top < window.innerHeight && jinxRect.bottom > 0) {
       // Меняем цвет текста на белый
