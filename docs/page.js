@@ -1206,7 +1206,9 @@ function setupScrollDownAnimation() {
       });
 
       if (targetElement) {
-        var elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+        var offset = window.innerWidth * 0.01875; // 1.875vw
+
+        var elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({
           top: elementPosition,
           behavior: 'smooth'
